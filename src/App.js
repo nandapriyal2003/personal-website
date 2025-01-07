@@ -206,22 +206,32 @@ function App() {
       <p><strong>Technologies:</strong> React.js, Node.js, HTML, CSS, Javascript</p>
     </div>
     <div className="project-card">
-      <h3>2. Social Discovery App</h3>
-      <p>
-        Built a platform for college students to connect through shared music
-        interests. Integrated Spotify API for personalized user experiences.
-      </p>
-      <p><strong>Technologies:</strong> Javascript, HTML, CSS, SQLite, Spotify API</p>
-    </div>
+  <h3>2. Social Discovery App</h3>
+  <p>
+    Built a platform for college students to connect through shared music interests. 
+    Integrated Spotify API for personalized user experiences.
+  </p>
+  <p>
+    <strong>Technologies:</strong> React.js, Node.js, SQLite, Spotify API
+  </p>
+  <a href="/spotifynder-demo.mp4" target="_blank" rel="noopener noreferrer">
+    Watch Demo Video
+  </a>
+</div>
+
     <div className="project-card">
-      <h3>3. Hack(H)er413 Website</h3>
-      <p>
-      Contributed to enhancing the Hack(H)er413 website by updating all relevant information. 
-      Designed and developed a user-friendly dashboard from scratch, allowing participants to apply for the hackathon seamlessly. 
-      Successfully deployed the website onto Heroku, ensuring its accessibility and functionality.
-      </p>
-      <p><strong>Technologies:</strong> React.js, Node.js, Javascript, HTML, CSS, Heroku</p>
-    </div>
+  <h3>3. Hack(H)er413 Website</h3>
+  <p>
+    Helped with making changes to the website to match the color scheme, updated all relevant information, 
+    created a dashboard to apply for the hackathon from scratch, and deployed it onto Heroku.
+  </p>
+  <p>
+    <strong>Technologies:</strong> React.js, Node.js, MongoDB, Heroku, CSS, GitHub Pages
+  </p>
+  <a href="https://www.hackher413.com" target="_blank" rel="noopener noreferrer">
+    Visit HackHer Website
+  </a>
+</div>
   </div>
 </section>
 {/* Contact Section */}
