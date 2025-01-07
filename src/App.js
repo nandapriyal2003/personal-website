@@ -214,7 +214,7 @@ function App() {
   <p>
     <strong>Technologies:</strong> React.js, Node.js, SQLite, Spotify API
   </p>
-  <a href="/spotifynder-demo.mp4" target="_blank" rel="noopener noreferrer">
+  <a href="https://drive.google.com/file/d/1pYIouPuIdCKcnej8E2lvKDH6VBxOVxUc/view?usp=share_link" target="_blank" rel="noopener noreferrer">
     Watch Demo Video
   </a>
 </div>
