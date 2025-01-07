@@ -27,7 +27,7 @@ function App() {
   <div className="hero-content">
     {/* Profile Picture with Glowing Hexagonal Border */}
     <div className="hero-image">
-      <img src="/pfp_pn.jpeg" alt="Priyal Nanda" />
+      <img src="/public/pfp_pn.jpeg" alt="Priyal Nanda"/>
     </div>
     <h1>
       Hello, I'm <span className="highlight">Priyal Nanda</span>
