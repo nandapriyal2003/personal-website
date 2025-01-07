@@ -204,6 +204,9 @@ function App() {
       Implemented modern design principles using React.js, styled-components, and CSS for an engaging user interface. 
       </p>
       <p><strong>Technologies:</strong> React.js, Node.js, HTML, CSS, Javascript</p>
+      <a href="https://nandapriyal2003.github.io/personal-website/" target="_blank" rel="noopener noreferrer">
+    Visit Personal Website
+  </a>
     </div>
     <div className="project-card">
   <h3>2. Social Discovery App</h3>
