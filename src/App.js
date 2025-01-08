@@ -16,7 +16,7 @@ function App() {
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="/Priyal_Nanda_Resume.pdf" download>Resume</a></li>
+          <li><a href="https://drive.google.com/file/d/1W1PgCoWXMg5ocG0eqyGzCxrgvWWjBtQu/view?usp=share_link" download>Resume</a></li>
           
         </ul>
         <a href="#contact" className="cta-button">Let’s Talk</a>
@@ -131,7 +131,7 @@ function App() {
             <span>Python</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/react.svg" alt="JAVA" />
+            <img src="/skill_icon/java.png" alt="JAVA" />
             <span>JAVA</span>
           </div>
           <div className="skill-item">
@@ -171,7 +171,7 @@ function App() {
             <span>Databricks</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/tableau.png" alt="Tableau" />
+            <img src="https://drive.google.com/file/d/1H47C92h332JCDCSuobhBL-4dzKanlmYj/view?usp=share_link" alt="Tableau" />
             <span>Tableau</span>
           </div>
           <div className="skill-item">
