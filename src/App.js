@@ -127,7 +127,7 @@ function App() {
         <h2>My Skills</h2>
         <div className="skills-list">
           <div className="skill-item">
-            <img src="/skill_icon/python.svg" alt="Python" />
+            <img src="https://drive.google.com/file/d/1rplkaySeddt5Lk5U6CsDwAiPDnaByZYd/view?usp=share_link" alt="Python" />
             <span>Python</span>
           </div>
           <div className="skill-item">
