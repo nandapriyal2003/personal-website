@@ -4,6 +4,24 @@ import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import TypingEffect from './TypingEffect'; // Typing effect component
 import './App.css';
+import profileImage from './assets/pfp_pn.jpg';
+import cimg from './assets/c.png';
+import cssimg from './assets/css.png';
+import databricksimg from './assets/databricks.png';
+import htmlimg from './assets/html.png';
+import javaimg from './assets/java.png';
+import javascriptimg from './assets/javascript.png';
+import postgresqlimg from './assets/postgresql.png';
+import powerbiimg from './assets/powerbi.png';
+import rimg from './assets/r.png';
+import tableauimg from './assets/tableau.png';
+import typescriptimg from './assets/typescript.png';
+import jiraimg from './assets/jira.png';
+import nextjsimg from './assets/nextjs.png';
+import nodejsimg from './assets/nodejs.png';
+import reactjsimg from './assets/react.png';
+import pythonimg from './assets/python.png';
+
 
 function App() {
   return (
@@ -27,7 +45,7 @@ function App() {
   <div className="hero-content">
     {/* Profile Picture with Glowing Hexagonal Border */}
     <div className="hero-image">
-      <img src="/public/pfp_pn.jpeg" alt="Priyal Nanda"/>
+      <img src={profileImage} alt="Priyal Nanda" />
     </div>
     <h1>
       Hello, I'm <span className="highlight">Priyal Nanda</span>
@@ -127,67 +145,67 @@ function App() {
         <h2>My Skills</h2>
         <div className="skills-list">
           <div className="skill-item">
-            <img src="https://drive.google.com/file/d/1rplkaySeddt5Lk5U6CsDwAiPDnaByZYd/view?usp=share_link" alt="Python" />
+            <img src={pythonimg} alt="Python"/>
             <span>Python</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/java.png" alt="JAVA" />
+            <img src={javaimg} alt="JAVA" />
             <span>JAVA</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/javascript.svg" alt="Javascript" />
+            <img src={javascriptimg}alt="Javascript" />
             <span>Javascript</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/postgresql.svg" alt="PostgreSQL" />
+            <img src={postgresqlimg}alt="PostgreSQL" />
             <span>PostgreSQL</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/typescript.svg" alt="Typescript" />
+            <img src={typescriptimg} alt="Typescript" />
             <span>Typescript</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/r.svg" alt="R" />
+            <img src={rimg} alt="R" />
             <span>R</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/html5.svg" alt="HTML" />
+            <img src={htmlimg} alt="HTML" />
             <span>HTML</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/css.svg" alt="CSS" />
+            <img src={cssimg} alt="CSS" />
             <span>CSS</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/c.svg" alt="C" />
+            <img src={cimg} alt="C" />
             <span>C</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/powerbi.jpg" alt="Power BI" />
+            <img src={powerbiimg} alt="Power BI" />
             <span>Power BI</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/databricks.svg" alt="Databricks" />
+            <img src={databricksimg} alt="Databricks" />
             <span>Databricks</span>
           </div>
           <div className="skill-item">
-            <img src="https://drive.google.com/file/d/1H47C92h332JCDCSuobhBL-4dzKanlmYj/view?usp=share_link" alt="Tableau" />
+            <img src={tableauimg} alt="Tableau" />
             <span>Tableau</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/jira.jpg" alt="Jira" />
+            <img src={jiraimg} alt="Jira" />
             <span>Jira</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/react.svg" alt="React.js" />
+            <img src={reactjsimg} alt="React.js" />
             <span>React.js</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/nextdotjs.svg" alt="Next.js" />
+            <img src={nextjsimg} alt="Next.js" />
             <span>Next.js</span>
           </div>
           <div className="skill-item">
-            <img src="/skill_icon/nodedotjs.svg" alt="Node.js" />
+            <img src={nodejsimg} alt="Node.js" />
             <span>Node.js</span>
           </div>
         </div>
