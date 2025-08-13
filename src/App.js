@@ -34,7 +34,7 @@ function App() {
           <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="https://drive.google.com/file/d/1W1PgCoWXMg5ocG0eqyGzCxrgvWWjBtQu/view?usp=share_link" download>Resume</a></li>
+          <li><a href="https://drive.google.com/file/d/14mqOw4U8ID89D2Wwyue3aMoRvg6QucjM/view?usp=sharing" download>Resume</a></li>
           
         </ul>
         <a href="#contact" className="cta-button">Let’s Talk</a>
