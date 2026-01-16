@@ -404,3 +404,79 @@ section h2 {
   color: #58e0c5;
   min-width: 20px;
 }
+/* =======================
+   SKILLS — STATIC MIND MAP
+======================= */
+
+.skills-mindmap {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 60px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 520px;
+}
+
+/* CENTER NODE */
+.mindmap-center {
+  background: #58e0c5;
+  color: black;
+  font-weight: 700;
+  padding: 22px 28px;
+  border-radius: 999px;
+  z-index: 2;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* BRANCH BASE */
+.mindmap-branch {
+  position: absolute;
+  width: 280px;
+  text-align: center;
+}
+
+/* POSITIONS */
+.branch-top {
+  top: 0;
+}
+
+.branch-bottom {
+  bottom: 0;
+}
+
+.branch-left {
+  left: 0;
+}
+
+.branch-right {
+  right: 0;
+}
+
+/* BRANCH TITLE */
+.branch-title {
+  color: #58e0c5;
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+}
+
+/* ITEMS */
+.branch-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.branch-items span {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+}

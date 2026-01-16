@@ -215,69 +215,74 @@ function App() {
         </div>
       </section>
 
-      {/* SKILLS — GREEN WITH LEFT-MOVING TICKER */}
-      <section id="skills" className="section-green skills-section">
-        <h2>My Skills</h2>
+      {/* SKILLS — STATIC MIND MAP */}
+<section id="skills" className="section-green skills-section">
+  <h2>My Skills</h2>
 
-        <div className="skills-ticker">
-          <div className="skills-track">
+  <div className="skills-mindmap">
 
-            {[
-              { img: pythonimg, name: 'Python' },
-              { img: SQLimg, name: 'SQL' },
-              { img: javaimg, name: 'Java' },
-              { img: javascriptimg, name: 'JavaScript' },
-              { img: postgresqlimg, name: 'PostgreSQL' },
-              { img: typescriptimg, name: 'TypeScript' },
-              { img: rimg, name: 'R' },
-              { img: htmlimg, name: 'HTML' },
-              { img: cssimg, name: 'CSS' },
-              { img: cimg, name: 'C' },
-              { img: powerbiimg, name: 'Power BI' },
-              { img: databricksimg, name: 'Databricks' },
-              { img: snowflakeimg, name: 'Snowflake' },
-              { img: tableauimg, name: 'Tableau' },
-              { img: jiraimg, name: 'Jira' },
-              { img: awsimg, name: 'AWS' },
-              { img: excelimg, name: 'Excel' },
-              { img: reactjsimg, name: 'React' },
-              { img: nextjsimg, name: 'Next.js' },
-              { img: nodejsimg, name: 'Node.js' }
-            ]
-            .concat(
-              [
-                { img: pythonimg, name: 'Python' },
-                { img: SQLimg, name: 'SQL' },
-                { img: javaimg, name: 'Java' },
-                { img: javascriptimg, name: 'JavaScript' },
-                { img: postgresqlimg, name: 'PostgreSQL' },
-                { img: typescriptimg, name: 'TypeScript' },
-                { img: rimg, name: 'R' },
-                { img: htmlimg, name: 'HTML' },
-                { img: cssimg, name: 'CSS' },
-                { img: cimg, name: 'C' },
-                { img: powerbiimg, name: 'Power BI' },
-                { img: databricksimg, name: 'Databricks' },
-                { img: snowflakeimg, name: 'Snowflake' },
-                { img: tableauimg, name: 'Tableau' },
-                { img: jiraimg, name: 'Jira' },
-                { img: awsimg, name: 'AWS' },
-                { img: excelimg, name: 'Excel' },
-                { img: reactjsimg, name: 'React' },
-                { img: nextjsimg, name: 'Next.js' },
-                { img: nodejsimg, name: 'Node.js' }
-              ]
-            )
-            .map((skill, index) => (
-              <div className="ticker-item" key={index}>
-                <img src={skill.img} alt={skill.name} />
-                <span>{skill.name}</span>
-              </div>
-            ))}
+    {/* CENTER */}
+    <div className="mindmap-center">
+      Core Skills
+    </div>
 
-          </div>
-        </div>
-      </section>
+    {/* PROGRAMMING */}
+    <div className="mindmap-branch branch-top">
+      <div className="branch-title">Programming</div>
+      <div className="branch-items">
+        <span>Python</span>
+        <span>Java</span>
+        <span>SQL</span>
+        <span>JavaScript</span>
+        <span>TypeScript</span>
+        <span>R</span>
+        <span>C</span>
+      </div>
+    </div>
+
+    {/* TOOLS & DATA */}
+    <div className="mindmap-branch branch-left">
+      <div className="branch-title">Data & Tools</div>
+      <div className="branch-items">
+        <span>Power BI</span>
+        <span>Databricks</span>
+        <span>Snowflake</span>
+        <span>PostgreSQL</span>
+        <span>Tableau</span>
+        <span>Excel</span>
+        <span>AWS</span>
+        <span>Azure DevOps</span>
+      </div>
+    </div>
+
+    {/* FRAMEWORKS */}
+    <div className="mindmap-branch branch-right">
+      <div className="branch-title">Frameworks</div>
+      <div className="branch-items">
+        <span>React</span>
+        <span>Node.js</span>
+        <span>Next.js</span>
+        <span>REST APIs</span>
+        <span>Git / GitHub</span>
+      </div>
+    </div>
+
+    {/* PROFESSIONAL */}
+    <div className="mindmap-branch branch-bottom">
+      <div className="branch-title">Professional</div>
+      <div className="branch-items">
+        <span>Data-Driven Decision Making</span>
+        <span>Cross-Functional Collaboration</span>
+        <span>Stakeholder Communication</span>
+        <span>Product Thinking</span>
+        <span>Technical Documentation</span>
+        <span>Research & Analysis</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
       {/* LEADERSHIP — BLACK */}
       <section id="leadership" className="leadership-section section-dark">
