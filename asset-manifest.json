@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.c682ef81.css",
+    "main.css": "/personal-website/static/css/main.023f5bb6.css",
     "main.js": "/personal-website/static/js/main.3aa7cebf.js",
     "static/media/pfp_pn.jpg": "/personal-website/static/media/pfp_pn.33ea4dffcfa01a0a4a29.jpg",
     "static/media/buildumass_logo.png": "/personal-website/static/media/buildumass_logo.22b6cea8964ed52073cd.png",
@@ -21,11 +21,11 @@
     "static/media/java.png": "/personal-website/static/media/java.375f91150aebfc2e19ef.png",
     "static/media/typescript.png": "/personal-website/static/media/typescript.274727f9e1d754f744ed.png",
     "index.html": "/personal-website/index.html",
-    "main.c682ef81.css.map": "/personal-website/static/css/main.c682ef81.css.map",
+    "main.023f5bb6.css.map": "/personal-website/static/css/main.023f5bb6.css.map",
     "main.3aa7cebf.js.map": "/personal-website/static/js/main.3aa7cebf.js.map"
   },
   "entrypoints": [
-    "static/css/main.c682ef81.css",
+    "static/css/main.023f5bb6.css",
     "static/js/main.3aa7cebf.js"
   ]
 }
