@@ -20,6 +20,7 @@ import postgresqlimg from './assets/postgresql.png';
 import tableauimg from './assets/tableau.png';
 import excelimg from './assets/excel.png';
 import awsimg from './assets/aws.png';
+import jiraimg from './assets/jira.png';    
 
 import reactjsimg from './assets/react.png';
 import nodejsimg from './assets/nodejs.png';
@@ -50,6 +51,7 @@ const skillCategories = [
             { name: 'Databricks', img: databricksimg },
             { name: 'Snowflake', img: snowflakeimg },
             { name: 'PostgreSQL', img: postgresqlimg },
+            { name: 'Jira', img: jiraimg },
             { name: 'Tableau', img: tableauimg },
             { name: 'Excel', img: excelimg },
             { name: 'AWS', icon: faAws },

@@ -324,14 +324,14 @@ section h2 {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   margin-bottom: 15px;
   color: #e2e8f0;
 }
 
 .cert-item svg {
   color: #38bdf8;
-  min-width: 24px;
+  min-width: 30px;
 }
 
 /* =======================
