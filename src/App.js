@@ -37,7 +37,7 @@ function App() {
           <li><a href="#leadership">Leadership</a></li>
           <li>
             <a
-              href="https://drive.google.com/file/d/14mqOw4U8ID89D2Wwyue3aMoRvg6QucjM/view?usp=sharing"
+              href="https://drive.google.com/file/d/1EE4RA5Agufz388-vzAtSthcP67HnSMjS/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

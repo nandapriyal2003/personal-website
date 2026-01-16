@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal-website/static/css/main.243460e3.css",
-    "main.js": "/personal-website/static/js/main.3aa7cebf.js",
+    "main.css": "/personal-website/static/css/main.3be86d96.css",
+    "main.js": "/personal-website/static/js/main.9d4640e7.js",
     "static/media/pfp_pn.jpg": "/personal-website/static/media/pfp_pn.33ea4dffcfa01a0a4a29.jpg",
     "static/media/buildumass_logo.png": "/personal-website/static/media/buildumass_logo.22b6cea8964ed52073cd.png",
     "static/media/javascript.png": "/personal-website/static/media/javascript.3deea216ffa8d4d150ba.png",
@@ -21,11 +21,11 @@
     "static/media/java.png": "/personal-website/static/media/java.375f91150aebfc2e19ef.png",
     "static/media/typescript.png": "/personal-website/static/media/typescript.274727f9e1d754f744ed.png",
     "index.html": "/personal-website/index.html",
-    "main.243460e3.css.map": "/personal-website/static/css/main.243460e3.css.map",
-    "main.3aa7cebf.js.map": "/personal-website/static/js/main.3aa7cebf.js.map"
+    "main.3be86d96.css.map": "/personal-website/static/css/main.3be86d96.css.map",
+    "main.9d4640e7.js.map": "/personal-website/static/js/main.9d4640e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.243460e3.css",
-    "static/js/main.3aa7cebf.js"
+    "static/css/main.3be86d96.css",
+    "static/js/main.9d4640e7.js"
   ]
 }
