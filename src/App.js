@@ -216,7 +216,7 @@ function App() {
       </section>
 
       {/* LEADERSHIP — BLACK */}
-      <section id="leadership" className="section-dark projects-section">
+      <section id="leadership" className="leadership-section">
         <h2>Leadership</h2>
         <div className="projects-container">
           <div className="project-card">Resident Assistant — Residential Life</div>
