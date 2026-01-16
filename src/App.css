@@ -333,6 +333,28 @@ section h2 {
   color: #38bdf8;
   min-width: 30px;
 }
+/* =======================
+   PROJECTS GRID (2x2 like Experience)
+======================= */
+.projects-section .projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.projects-section .project-card {
+  width: auto;
+  text-align: left;
+}
+
+/* Responsive fallback */
+@media (max-width: 900px) {
+  .projects-section .projects-container {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* =======================
    CONTACT SECTION

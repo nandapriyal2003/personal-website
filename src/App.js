@@ -87,7 +87,7 @@ function App() {
 
       {/* EXPERIENCE — BLACK */}
       <section id="experience" className="section-dark experience-section">
-        <h2>My Experience</h2>
+        <h2>Experiences</h2>
         <div className="projects-container">
 
           <div className="project-card">
@@ -147,7 +147,7 @@ function App() {
 
       {/* PROJECTS — GREEN */}
       <section id="projects" className="section-green projects-section">
-        <h2>My Projects</h2>
+        <h2>Projects</h2>
         <div className="projects-container">
 
           <div className="project-card">
@@ -178,8 +178,8 @@ function App() {
           </div>
           <div className="project-card">
             <h3>Job Search App</h3>
-            <p>SwipeHire is a full-stack web application that helps college students discover jobs and 
-              internships through an intuitive swipe-based interface, automatically ranking opportunities 
+            <p>SwipeHire is a full-stack web application that helps college students discover jobs and
+              internships through an intuitive swipe-based interface, automatically ranking opportunities
               based on resume and skill matching.</p>
             <p><strong>Tech:</strong> React.js,Django, PostgreSQL, REST APIs</p>
             <a href="https://drive.google.com/file/d/1YjAxYyWw4cCDezqE0MGVUJriipxFPqfq/view?usp=sharing" target="_blank" rel="noopener noreferrer">
@@ -227,7 +227,7 @@ function App() {
 
       {/* SKILLS — GREEN */}
       <section id="skills" className="section-green skills-section">
-        <h2>My Skills</h2>
+        <h2>Skills</h2>
         <SkillsMindMap />
       </section>
 
