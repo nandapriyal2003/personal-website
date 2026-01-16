@@ -1,16 +1,25 @@
 /* =======================
-   GENERAL STYLES
+   GENERAL STYLES - DEEP SLATE THEME
 ======================= */
 body {
   margin: 0;
   font-family: 'Verdana', sans-serif;
-  background-color: black;
-  color: #d9d9d9;
+  background-color: #0f172a;
+  /* Slate 900 - Deepest Background */
+  color: #f8fafc;
+  /* Slate 50 - High Contrast Text */
 }
 
 a {
   text-decoration: none;
-  color: #58e0c5;
+  color: #38bdf8;
+  /* Sky Blue - High Contrast Accent */
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #475569;
+  /* Slate 600 - Lightest Slate for Hover */
 }
 
 /* =======================
@@ -19,9 +28,11 @@ a {
 section h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 30px;
+  color: #f1f5f9;
+  /* Slate 100 */
+  margin-bottom: 40px;
   text-align: center;
+  letter-spacing: -0.5px;
 }
 
 /* =======================
@@ -32,47 +43,63 @@ section h2 {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: #0f0f0f;
+  background-color: #020617;
+  /* Slate 950 - Almost Black */
+  border-bottom: 1px solid #1e293b;
+  /* Subtle border */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #f8fafc;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .nav-links li a {
-  color: #d9d9d9;
-  font-size: 1.1rem;
-  transition: color 0.3s;
+  color: #cbd5e1;
+  /* Slate 300 */
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .nav-links li a:hover {
-  color: #c1eae1;
+  color: #38bdf8;
 }
 
 .cta-button {
-  background-color: #58e0c5;
-  color: black;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
+  background-color: #38bdf8;
+  color: #0f172a;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s;
 }
 
 .cta-button:hover {
-  background-color: #45b89a;
+  background-color: #475569;
+  /* Slate 600 */
+  transform: translateY(-1px);
 }
 
 /* =======================
-   HERO SECTION (FIXED)
+   HERO SECTION
 ======================= */
 .hero-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 20px;
-  background: linear-gradient(to bottom, black, rgba(119, 252, 225, 0.56));
+  padding: 100px 20px;
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+  /* Subtle glow */
   text-align: center;
   color: white;
 }
@@ -80,256 +107,207 @@ section h2 {
 .hero-content {
   display: flex;
   flex-direction: column;
-  align-items: center;      
+  align-items: center;
   max-width: 900px;
   margin: 0 auto;
 }
 
 /* Name */
 .hero-content h1 {
-  font-size: 40px;
-  margin-top: 25px;
+  font-size: 48px;
+  margin-top: 30px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.highlight {
+  color: #38bdf8;
+  /* Sky Blue - High Contrast Accent */
 }
 
 /* Typing line */
 .typing-effect {
-  margin-top: 10px;
-  font-size: 30px;
+  margin-top: 15px;
+  font-size: 24px;
+  color: #cbd5e1;
+  font-weight: 400;
 }
 
-/* Summary — WIDER, CLEANER, AIRIER */
+/* Summary */
 .hero-summary {
-  max-width: 1000px;           /* wider */
-  /* margin: 30px auto 0;        /* centers horizontally */
-  padding: 0 20px;            /* breathing room on small screens */
-  font-size: 1.05rem;
-  line-height: 1.75;
-  color: #e6f4f1;
+  max-width: 800px;
+  margin-top: 30px;
+  padding: 0 20px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #94a3b8;
+  /* Slate 400 - Softer text */
 }
 
 /* Profile image */
 .hero-image {
   position: relative;
-  width: 260px;               /* slightly smaller = better balance */
-  height: 260px;
+  width: 240px;
+  height: 240px;
   margin-bottom: 20px;
 }
 
 .hero-image img {
   width: 100%;
   height: 100%;
-  clip-path: polygon(
-    50% 0%,
-    100% 25%,
-    100% 75%,
-    50% 100%,
-    0% 75%,
-    0% 25%
-  );
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   object-fit: cover;
   z-index: 1;
 }
 
-/* Glow stays the same */
 .hero-image::before {
   content: '';
   position: absolute;
-  top: -10px;
-  left: -10px;
-  width: calc(100% + 20px);
-  height: calc(100% + 20px);
-  clip-path: polygon(
-    50% 0%,
-    100% 25%,
-    100% 75%,
-    50% 100%,
-    0% 75%,
-    0% 25%
-  );
-  background: linear-gradient(135deg, #f9f9f9, #f5f6f8, #f2f5f4);
-  filter: blur(8px);
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  background: linear-gradient(135deg, #0f172a, #0f172a);
+  filter: blur(10px);
   z-index: 0;
-  animation: glowingHexagon 3s infinite;
+  opacity: 0.7;
 }
 
 /* =======================
-   EXPERIENCE SECTION
+   SHARED SECTION STYLES
 ======================= */
-.experience-section {
-  padding: 70px 20px;
-  background-color: black;   /* solid black, no gray */
-  text-align: center;
+/* Primary Dark (Slate 900) */
+.section-dark {
+  padding: 100px 20px;
+  background-color: #0f172a;
 }
 
+/* Secondary Dark (Slate 800/900 mix) - Replaces Green */
+.section-green {
+  padding: 100px 20px;
+  background-color: #162032;
+  /* Slightly lighter than main bg */
+  border-top: 1px solid #1e293b;
+  border-bottom: 1px solid #1e293b;
+}
+
+.experience-section,
+.education-section,
+.leadership-section {
+  text-align: center;
+  background-color: #0f172a;
+  /* Ensure consistency */
+}
 
 /* =======================
-   SKILLS SECTION
+   CARDS (PROJECTS, EXPERIENCE, ETC)
 ======================= */
-.skills-section {
-  padding: 50px;
-  background: linear-gradient(to bottom, black, rgba(119, 252, 225, 0.56));
-  text-align: center;
-}
-
-.skills-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.skills-list {
+.projects-container,
+.education-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
-}
-
-.skill-item {
-  width: 130px;
-  height: 140px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  background-color: rgba(255, 255, 255, 0.77);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.skill-item:hover {
-  transform: scale(1.05);
-  background-color: #f0f0f0;
-}
-
-.skill-item img {
-  width: 50px;
-  height: 50px;
-}
-
-.skill-item span {
-  color: black;
-  font-size: 0.9rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-
-/* =======================
-   PROJECTS + LEADERSHIP
-======================= */
-.projects-section {
-  padding: 50px;
-  background: linear-gradient(to bottom, black, rgba(119, 252, 225, 0.56));
-  text-align: center;
-}
-
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
 }
 
 .project-card {
-  background-color: #1a1a1a;
-  padding: 20px;
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s;
+  background-color: #1e293b;
+  /* Slate 800 - Card Background */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #334155;
+  /* Slate 700 - Subtle Border */
+  color: #e2e8f0;
 }
 
 .project-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-color: #475569;
 }
 
 .project-card h3 {
-  color: #58e0c5;
+  color: #f1f5f9;
+  margin-top: 0;
+  font-size: 1.25rem;
 }
 
 .project-card strong {
-  color: #58e0c5;
-}
-/* =======================
-   LEADERSHIP SECTION (BLACK)
-======================= */
-.leadership-section {
-  padding: 70px 20px;
-  background-color: black;
-  text-align: center;
+  color: #38bdf8;
+  /* Accent for dates/tech */
 }
 
-
-/* =======================
-   CONTACT SECTION
-======================= */
-.contact-section {
-  padding: 50px;
-  background: linear-gradient(to top, rgba(119, 252, 225, 0.56), black);
-  text-align: center;
+.project-card p {
+  line-height: 1.6;
+  color: #cbd5e1;
 }
 
-.contact-details a {
-  color: white;
-  font-weight: bold;
+.project-card a {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: #38bdf8;
 }
 
-.contact-details a:hover {
-  color: #58e0c5;
-}
-
-.social-links {
-  margin-top: 20px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.social-links a {
-  background: white;
-  color: black;
-  padding: 10px;
-  border-radius: 50%;
-  transition: transform 0.3s;
-}
-
-.social-links a:hover {
-  transform: scale(1.2);
+.project-card a:hover {
+  text-decoration: underline;
 }
 
 /* =======================
-   FOOTER
+   SPECIFIC SECTION LAYOUTS
 ======================= */
-.footer {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
-  color: #d9d9d9;
-  background-color: black;
-}
 
-/* =======================
-   EDUCATION & CERTIFICATIONS
-======================= */
-.education-section {
-  padding: 50px 20px;
-  background-color: black;
-  text-align: center;
-}
-
-.education-container {
-  display: flex;
+/* Experience Grid (2x2) */
+.experience-section .projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-/* Make cards equal width on desktop */
+.experience-section .project-card {
+  width: auto;
+  text-align: left;
+}
+
+.experience-section ul {
+  text-align: left;
+  display: block;
+  margin-top: 15px;
+  padding-left: 20px;
+  color: #cbd5e1;
+}
+
+.experience-section li {
+  margin-bottom: 8px;
+}
+
+/* Leadership Grid (2x2) */
+.leadership-section .projects-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.leadership-section .project-card {
+  width: auto;
+  font-size: 1.1rem;
+  padding: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Education Cards */
 .education-container .project-card {
-  width: 360px;
+  width: 550px;
+  max-width: 90vw;
+  font-size: 1.25rem;
 }
 
 /* Certifications */
@@ -337,18 +315,114 @@ section h2 {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  margin-top: 10px;
-  text-align: left;
+  margin-top: 15px;
+  text-align: center;
 }
 
 .cert-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
-  font-size: 0.95rem;
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: #e2e8f0;
 }
 
 .cert-item svg {
-  color: #58e0c5;
-  min-width: 20px;
+  color: #38bdf8;
+  min-width: 24px;
+}
+
+/* =======================
+   CONTACT SECTION
+======================= */
+.contact-section {
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, #162032, #0f172a);
+  text-align: center;
+  border-top: 1px solid #1e293b;
+}
+
+.contact-details {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  margin-top: 20px;
+}
+
+.contact-details a {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-links a {
+  background: #1e293b;
+  color: #f8fafc;
+  padding: 12px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #334155;
+  width: 50px;
+  height: 50px;
+}
+
+.social-links a:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+  transform: translateY(-3px);
+  border-color: #38bdf8;
+}
+
+/* =======================
+   FOOTER
+======================= */
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  font-size: 0.9rem;
+  color: #64748b;
+  /* Slate 500 */
+  background-color: #020617;
+  border-top: 1px solid #0f172a;
+}
+
+/* =======================
+   EXPERIENCE LOGOS
+======================= */
+.card-header-flex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.exp-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  background-color: white;
+  /* Needed for some dark logos if they aren't transparent white */
+  border-radius: 8px;
+  padding: 2px;
+  /* Small padding if using white bg */
+}
+
+/* Since our logos are colored, a white background box looks cleanest on Dark mode */
+/* OR if logos were white-monochrome, background-color: transparent would work. */
+/* Reverting to colored logos as requested means we likely need a white container 
+   OR transparent if the logos visually work on dark slate. 
+   Assuming standard logos (colored) -> White BG usually safest. 
+   Let's set background-color: #ffffff for the logo container to ensure visibility. */
+.exp-logo {
+  background-color: #ffffff;
 }

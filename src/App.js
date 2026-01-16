@@ -10,30 +10,16 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import TypingEffect from './TypingEffect';
+import SkillsMindMap from './SkillsMindMap';
 import './App.css';
 
 /* Assets */
 import profileImage from './assets/pfp_pn.jpg';
-import cimg from './assets/c.png';
-import cssimg from './assets/css.png';
-import databricksimg from './assets/databricks.png';
-import htmlimg from './assets/html.png';
-import javaimg from './assets/java.png';
-import javascriptimg from './assets/javascript.png';
-import postgresqlimg from './assets/postgresql.png';
-import powerbiimg from './assets/powerbi.png';
-import rimg from './assets/r.png';
-import tableauimg from './assets/tableau.png';
-import typescriptimg from './assets/typescript.png';
-import jiraimg from './assets/jira.png';
-import nextjsimg from './assets/nextjs.png';
-import nodejsimg from './assets/nodejs.png';
-import reactjsimg from './assets/react.png';
-import pythonimg from './assets/python.png';
-import SQLimg from './assets/SQL.png';
-import awsimg from './assets/aws.png';
-import snowflakeimg from './assets/snowflake.png';
-import excelimg from './assets/excel.png';
+import hackherLogo from './assets/hackher_new_logo.png';
+import siemensLogo from './assets/siemens_logo.png';
+import dreamLogo from './assets/dreamlab_logo.png';
+import buildLogo from './assets/buildumass_logo.png';
+
 
 function App() {
   return (
@@ -88,12 +74,11 @@ function App() {
             </a>
           </div>
 
-          {/* SUMMARY — WIDER + LESS CLUTTERED */}
           <p className="hero-summary">
-            Strategic and analytical professional with hands-on experience in data analytics, distributed systems, 
-            and data-driven product development. Demonstrated ability to translate complex datasets into actionable 
-            insights, build scalable solutions, and support decision-making across cross-functional teams. 
-            Particularly interested in working at the intersection of technology, analytics, and real-world 
+            Strategic and analytical professional with hands-on experience in data analytics, distributed systems,
+            and data-driven product development. Demonstrated ability to translate complex datasets into actionable
+            insights, build scalable solutions, and support decision-making across cross-functional teams.
+            Particularly interested in working at the intersection of technology, analytics, and real-world
             impact to drive meaningful outcomes.
           </p>
 
@@ -106,7 +91,23 @@ function App() {
         <div className="projects-container">
 
           <div className="project-card">
-            <h3>Siemens Healthineers | Data Governance Intern</h3>
+            <div className="card-header-flex">
+              <img src={hackherLogo} alt="Hack(H)er413 Logo" className="exp-logo" />
+              <h3>Hack(H)er413 | Technical Team Lead</h3>
+            </div>
+            <p><strong>Oct 2024 – Present</strong></p>
+            <ul>
+              <li>Developed a registration dashboard for 500+ attendees; optimized backend workflows to automate event processes.</li>
+              <li>Enhanced hackathon website UI/UX with HTML, CSS, JavaScript, improving accessibility and engagement by 30%.</li>
+              <li>Integrated analytics tools to monitor participant engagement and led technical coordination across the team.</li>
+            </ul>
+          </div>
+
+          <div className="project-card">
+            <div className="card-header-flex">
+              <img src={siemensLogo} alt="Siemens Logo" className="exp-logo" />
+              <h3>Siemens Healthineers | Data Governance Intern</h3>
+            </div>
             <p><strong>Jun 2024 – Aug 2024</strong></p>
             <ul>
               <li>Developed and implemented over 8 Power BI dashboards to analyze customer data from SAP systems.</li>
@@ -116,7 +117,10 @@ function App() {
           </div>
 
           <div className="project-card">
-            <h3>Dream Lab - Research for Exploration, Analytics, & Modeling | Data Analytics Assistant</h3>
+            <div className="card-header-flex">
+              <img src={dreamLogo} alt="Dream Lab Logo" className="exp-logo" />
+              <h3>Dream Lab - Research for Exploration, Analytics, & Modeling | Data Analytics Assistant</h3>
+            </div>
             <p><strong>Sep 2023 – Feb 2024</strong></p>
             <ul>
               <li>Designed an incremental data analysis algorithm improving accuracy by 15%.</li>
@@ -126,7 +130,10 @@ function App() {
           </div>
 
           <div className="project-card">
-            <h3>BUILD UMass | Technical Analyst</h3>
+            <div className="card-header-flex">
+              <img src={buildLogo} alt="BUILD UMass Logo" className="exp-logo" />
+              <h3>BUILD UMass | Technical Analyst</h3>
+            </div>
             <p><strong>Feb 2023 – May 2025</strong></p>
             <ul>
               <li>Conducted Python-based analytics for a multilingual health application.</li>
@@ -156,12 +163,18 @@ function App() {
             <h3>Social Discovery App</h3>
             <p>Music-based social platform integrating Spotify API.</p>
             <p><strong>Tech:</strong> React, SQLite, Spotify API</p>
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">
+              View Demo
+            </a>
           </div>
 
           <div className="project-card">
             <h3>Hack(H)er413 Website</h3>
             <p>Redesigned and deployed the official hackathon website and the Application Dashboard.</p>
             <p><strong>Tech:</strong> React, MongoDB, AWS (SES, EC2)</p>
+            <a href="https://www.hackher413.com" target="_blank" rel="noopener noreferrer">
+              Visit Website
+            </a>
           </div>
 
         </div>
@@ -184,17 +197,17 @@ function App() {
 
             <div className="cert-item">
               <FontAwesomeIcon icon={faGoogle} />&nbsp;
-              Data Analytics Professional Certificate
+              Data Analytics Professional
             </div>
 
             <div className="cert-item">
               <FontAwesomeIcon icon={faAws} />&nbsp;
-              Cloud Solutions Architect (Coursework)
+              Cloud Solutions Architect
             </div>
 
             <div className="cert-item">
               <FontAwesomeIcon icon={faMicrosoft} />&nbsp;
-              Power BI Data Analyst (Coursework)
+              Power BI Data Analyst
             </div>
 
           </div>
@@ -205,15 +218,7 @@ function App() {
       {/* SKILLS — GREEN */}
       <section id="skills" className="section-green skills-section">
         <h2>My Skills</h2>
-        <div className="skills-list">
-          {[pythonimg, SQLimg, javaimg, javascriptimg, postgresqlimg, typescriptimg, rimg,
-            htmlimg, cssimg, cimg, powerbiimg, databricksimg, snowflakeimg, tableauimg,
-            jiraimg, awsimg, excelimg, reactjsimg, nextjsimg, nodejsimg].map((img, i) => (
-              <div key={i} className="skill-item">
-                <img src={img} alt="skill" />
-              </div>
-          ))}
-        </div>
+        <SkillsMindMap />
       </section>
 
       {/* LEADERSHIP — BLACK */}
@@ -221,7 +226,7 @@ function App() {
         <h2>Leadership</h2>
         <div className="projects-container">
           <div className="project-card">Resident Assistant — Residential Life</div>
-          <div className="project-card">Vice President — Indian Student Union</div>
+          <div className="project-card">Tech Team Director - Hack(H)er413</div>
           <div className="project-card">Undergraduate Course Assistant — CICS</div>
           <div className="project-card">Peer Advisor — CS Department</div>
         </div>
@@ -230,8 +235,29 @@ function App() {
       {/* CONTACT — GRADIENT */}
       <section id="contact" className="contact-section">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:nandapriyal2003@gmail.com">nandapriyal2003@gmail.com</a></p>
-        <p>Phone: +1 (617) 642-8502</p>
+        <p style={{ fontSize: '1.1rem', marginBottom: '20px' }}>
+          Feel free to reach out via email, social media, or phone number.
+        </p>
+
+        <div className="contact-details">
+          <p>Email: <a href="mailto:nandapriyal2003@gmail.com">nandapriyal2003@gmail.com</a></p>
+          <p>Phone: +1 (617) 642-8502</p>
+        </div>
+
+        <div className="social-links" style={{ marginTop: '30px' }}>
+          <a href="https://linkedin.com/in/priyal-nanda" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          </a>
+          <a href="mailto:nandapriyal2003@gmail.com">
+            <FontAwesomeIcon icon={faEnvelope} size="2x" />
+          </a>
+          <a href="https://instagram.com/Priyal_nanda" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} size="2x" />
+          </a>
+          <a href="https://github.com/nandapriyal2003" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} size="2x" />
+          </a>
+        </div>
       </section>
 
       <footer className="footer">
