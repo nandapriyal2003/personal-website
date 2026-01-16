@@ -21,8 +21,10 @@ import nextjsimg from './assets/nextjs.png';
 import nodejsimg from './assets/nodejs.png';
 import reactjsimg from './assets/react.png';
 import pythonimg from './assets/python.png';
-import SQLimg from './assets/SQL.png'
-
+import SQLimg from './assets/SQL.png';
+import awsimg from './assets/aws.png';
+import snowflakeimg from './assets/snowflake.png';
+import excelimg from './assets/excel.png';
 
 function App() {
   return (
@@ -194,12 +196,24 @@ function App() {
             <span>Databricks</span>
           </div>
           <div className="skill-item">
+            <img src={snowflakeimg} alt="Snowflake" />
+            <span>Snowflake</span>
+          </div>
+          <div className="skill-item">
             <img src={tableauimg} alt="Tableau" />
             <span>Tableau</span>
           </div>
           <div className="skill-item">
             <img src={jiraimg} alt="Jira" />
             <span>Jira</span>
+          </div>
+          <div className="skill-item">
+            <img src={awsimg} alt="Amazon Web Services" />
+            <span>Amazon Web Services</span>
+          </div>
+          <div className="skill-item">
+            <img src={excelimg} alt="Excel" />
+            <span>Excel</span>
           </div>
           <div className="skill-item">
             <img src={reactjsimg} alt="React.js" />

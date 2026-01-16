@@ -7,7 +7,7 @@ function TypingEffect() {
       strings={[
         'Data Engineer',
         'Data Analyst',
-        'Data Governance',
+        'AI Solutions Architect',
         'Front-End Developer',
         'Software Engineer',
         'Research Assistant',
