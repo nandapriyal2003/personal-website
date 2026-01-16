@@ -85,10 +85,10 @@ function App() {
               <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
           </div>
-            <p className="hero-summary"> Computer Science student at the University of Massachusetts Amherst with experience in 
-              data analytics, distributed systems, and product-focused development. I enjoy building
-              scalable solutions, translating data into insights, and working at the intersection of
-              technology and real-world impact.</p>
+            <p className="hero-summary"> Computer Science student at the University of Massachusetts Amherst with hands-on 
+              experience in data analytics, distributed systems, and data-driven product development. I enjoy building 
+              scalable solutions, transforming complex data into actionable insights, and working at the intersection 
+              of technology, analytics, and real-world impact.</p>
         </div>
       </section>
 

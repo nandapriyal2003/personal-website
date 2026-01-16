@@ -1,10 +1,15 @@
 /* =======================
-   GENERAL STYLES
+   GLOBAL BASE
 ======================= */
 body {
   margin: 0;
   font-family: 'Verdana', sans-serif;
-  background-color: black;
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    #050505 40%,
+    #000000 100%
+  );
   color: #d9d9d9;
 }
 
@@ -14,18 +19,47 @@ a {
 }
 
 /* =======================
-   CONSISTENT SECTION HEADERS
+   SECTION WRAPPER (KEY)
+======================= */
+.section {
+  position: relative;
+  padding: 80px 20px;
+  background: radial-gradient(
+    ellipse at top,
+    rgba(88, 224, 197, 0.08),
+    rgba(0, 0, 0, 0.95) 70%
+  );
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(88, 224, 197, 0.35),
+    transparent
+  );
+}
+
+/* =======================
+   SECTION HEADERS
 ======================= */
 section h2 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
 /* =======================
-   NAVIGATION BAR
+   NAVBAR
 ======================= */
 .navbar {
   display: flex;
@@ -57,115 +91,140 @@ section h2 {
   padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #45b89a;
 }
 
 /* =======================
-   HERO SECTION
+   HERO (SPECIAL)
 ======================= */
-.hero-section { 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  flex-direction: column; 
-  padding: 50px 20px; 
-  background: linear-gradient(to bottom, black, rgba(119, 252, 225, 0.56));
-   /* Gradient from black to light greenish */ 
-   text-align: center; color: white; } 
-   
-  .hero-content { 
-    max-width: 600px; } .hero-content h1, .hero-content p { 
-      color: white; 
-      font-size: 40px; /* Ensure the text stands out on the gradient */ } /* Profile Picture Container */ 
-      
-  .hero-image { position: relative; /* Needed for the glowing border */ 
-    width: 400px; 
-    height: 400px; 
-    margin-bottom: 20px; } /* Profile Picture Styling */ 
-    
-  .hero-image img { 
-    width: 100%; 
-    height: 100%; 
-    clip-path: polygon( 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25% ); 
-    object-fit: cover; z-index: 1; /* Keeps the image above the glowing border */ 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); } /* Glowing Border Behind the Picture */ 
-    
-  .hero-image::before { 
-    content: ''; 
-    position: absolute; 
-    top: -10px; /* Adjust for border spacing */ 
-    left: -10px; /* Adjust for border spacing */ 
-    width: calc(100% + 20px); /* Adjust for border size */ 
-    height: calc(100% + 20px); /* Adjust for border size */ 
-    clip-path: polygon( 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25% ); /* Matches hexagonal shape */ 
-    background: linear-gradient(135deg, #f9f9f9, #f5f6f8, #f2f5f4); /* Gradient glow effect */ 
-    filter: blur(8px); /* Creates the glowing effect */ z-index: 0; /* Places the glow behind the image */ 
-    animation: glowingHexagon 3s infinite; /* Animation for glowing effect */ } /* Glowing Animation */ 
-    
-    @keyframes glowingHexagon { 0% { 
-      opacity: 0.8; 
-      box-shadow: 0 0 20px rgb(209, 220, 218), 0 0 40px rgba(193, 225, 219, 0.4); } 50% 
-      { opacity: 1; 
-        box-shadow: 0 0 40px rgb(72, 82, 80), 0 0 60px rgba(165, 190, 185, 0.8); } 100% 
-      { opacity: 0.8; box-shadow: 0 0 20px rgba(119, 128, 126, 0.6), 0 0 40px rgba(88, 224, 197, 0.4); } }
-
-/* =======================
-   EXPERIENCE SECTION
-======================= */
-.experience-section {
-  padding: 50px;
-  background-color: #0f0f0f;
+.hero-section {
+  padding: 70px 20px;
   text-align: center;
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(88, 224, 197, 0.35),
+      transparent 55%
+    ),
+    linear-gradient(
+      to bottom,
+      #000000,
+      rgba(15, 40, 35, 0.9)
+    );
 }
 
-.experience-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+.hero-content h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.hero-summary {
+  max-width: 760px;
+  margin: 30px auto 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #e6f4f1;
+  opacity: 0.95;
+}
+
+/* Profile Image */
+.hero-image {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto 25px;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-image::before {
+  content: '';
+  position: absolute;
+  inset: -10px;
+  clip-path: inherit;
+  background: linear-gradient(135deg, #f9f9f9, #f2f5f4);
+  filter: blur(8px);
+  animation: glowingHexagon 3s infinite;
+}
+
+@keyframes glowingHexagon {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
 }
 
 /* =======================
-   SKILLS SECTION
+   EXPERIENCE / PROJECTS / LEADERSHIP
+======================= */
+.projects-container,
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.project-card,
+.experience-card {
+  background-color: #1a1a1a;
+  padding: 20px;
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+}
+
+.project-card:hover,
+.experience-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card h3,
+.experience-card h3 {
+  color: #58e0c5;
+}
+
+/* =======================
+   SKILLS
 ======================= */
 .skills-section {
-  padding: 50px;
-  background: linear-gradient(to bottom, black, rgba(119, 252, 225, 0.56));
-  text-align: center;
-}
-
-.skills-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  padding: 60px 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(88, 224, 197, 0.12),
+    rgba(88, 224, 197, 0.25),
+    rgba(88, 224, 197, 0.12)
+  );
 }
 
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
   justify-content: center;
 }
 
 .skill-item {
   width: 130px;
   height: 140px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  background-color: rgba(255, 255, 255, 0.77);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s, background-color 0.3s;
-}
-
-.skill-item:hover {
-  transform: scale(1.05);
-  background-color: #f0f0f0;
 }
 
 .skill-item img {
@@ -174,126 +233,27 @@ section h2 {
 }
 
 .skill-item span {
+  margin-top: 8px;
+  font-size: 0.85rem;
   color: black;
-  font-size: 0.9rem;
   font-weight: bold;
-  text-transform: uppercase;
-}
-
-/* =======================
-   PROJECTS + LEADERSHIP
-======================= */
-.projects-section {
-  padding: 50px 20px;
-  background-color: black;
-  text-align: center;
-}
-
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.project-card {
-  background-color: #1a1a1a;
-  padding: 20px;
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s;
-}
-
-.project-card:hover {
-  transform: scale(1.05);
-}
-
-.project-card h3 {
-  color: #58e0c5;
-}
-
-.project-card strong {
-  color: #58e0c5;
-}
-
-/* =======================
-   CONTACT SECTION
-======================= */
-.contact-section {
-  padding: 50px;
-  background: linear-gradient(to top, rgba(119, 252, 225, 0.56), black);
-  text-align: center;
-}
-
-.contact-details a {
-  color: white;
-  font-weight: bold;
-}
-
-.contact-details a:hover {
-  color: #58e0c5;
-}
-
-.social-links {
-  margin-top: 20px;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.social-links a {
-  background: white;
-  color: black;
-  padding: 10px;
-  border-radius: 50%;
-  transition: transform 0.3s;
-}
-
-.social-links a:hover {
-  transform: scale(1.2);
-}
-
-/* =======================
-   FOOTER
-======================= */
-.footer {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 0.9rem;
-  color: #d9d9d9;
-  background-color: black;
 }
 
 /* =======================
    EDUCATION & CERTIFICATIONS
 ======================= */
-.education-section {
-  padding: 50px 20px;
-  background-color: black;
-  text-align: center;
-}
-
 .education-container {
   display: flex;
   gap: 30px;
   justify-content: center;
-  align-items: stretch;
   flex-wrap: wrap;
 }
 
-/* Make cards equal width on desktop */
-.education-container .project-card {
-  width: 360px;
-}
-
-/* Certifications */
 .cert-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-top: 10px;
-  text-align: left;
+  gap: 14px;
+  margin-top: 15px;
 }
 
 .cert-item {
@@ -305,5 +265,44 @@ section h2 {
 
 .cert-item svg {
   color: #58e0c5;
-  min-width: 20px;
+}
+
+/* =======================
+   CONTACT
+======================= */
+.contact-section {
+  background: radial-gradient(
+    ellipse at bottom,
+    rgba(88, 224, 197, 0.25),
+    #000000 70%
+  );
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-links a {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* =======================
+   FOOTER
+======================= */
+.footer {
+  text-align: center;
+  padding: 30px 0;
+  background: linear-gradient(
+    to top,
+    rgba(88, 224, 197, 0.2),
+    #000000
+  );
+  font-size: 0.9rem;
 }
