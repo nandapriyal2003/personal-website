@@ -179,13 +179,13 @@ section h2 {
 ======================= */
 /* Primary Dark (Slate 900) */
 .section-dark {
-  padding: 100px 20px;
+  padding: 20px 20px;
   background-color: #0f172a;
 }
 
 /* Secondary Dark (Slate 800/900 mix) - Replaces Green */
 .section-green {
-  padding: 100px 20px;
+  padding: 20px 20px;
   background-color: #162032;
   /* Slightly lighter than main bg */
   border-top: 1px solid #1e293b;
@@ -199,7 +199,6 @@ section h2 {
   background-color: #0f172a;
   /* Ensure consistency */
 }
-
 /* =======================
    CARDS (PROJECTS, EXPERIENCE, ETC)
 ======================= */
