@@ -219,15 +219,9 @@ section h2 {
 ======================= */
 .projects-section {
   padding: 70px 20px;
-  background: linear-gradient(
-    to bottom,
-    black,
-    rgba(119, 252, 225, 0.45),
-    black
-  );
+  background-color: black;   /* solid black, no gray */
   text-align: center;
 }
-
 
 .projects-container {
   display: flex;
