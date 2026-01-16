@@ -173,13 +173,13 @@ function App() {
 
         </div>
       </section>
-      {/* EDUCATION */}
-<section id="education" className="projects-section">
-  <h2>Education</h2>
+{/* EDUCATION & CERTIFICATIONS */}
+<section id="education" className="education-section">
+  <h2>Education & Certifications</h2>
 
-  <div className="projects-container">
+  <div className="education-container">
 
-    {/* Degree Card */}
+    {/* EDUCATION */}
     <div className="project-card">
       <h3>University of Massachusetts Amherst</h3>
       <p><strong>Bachelor of Science in Computer Science</strong></p>
@@ -187,46 +187,39 @@ function App() {
       <p>Expected Graduation: Fall 2025</p>
     </div>
 
-    {/* Certifications Card */}
-<div className="project-card">
-  <h3>Certifications</h3>
+    {/* CERTIFICATIONS */}
+    <div className="project-card">
+      <h3>Certifications</h3>
 
-  <div className="cert-list">
+      <div className="cert-list">
 
-    <div className="cert-item">
-      <FontAwesomeIcon icon={faGoogle} size="lg" />
-      <div>
-        <strong>Google</strong> — Data Analytics Professional Certificate<br />
-        <a
-          href="https://drive.google.com/file/d/1T-ysNsud1xMAp5OuU44tDIgs1WCHUYAZ/view?usp=sharing"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Credential
-        </a>
+        <div className="cert-item">
+          <FontAwesomeIcon icon={faGoogle} />
+          <div>
+            <strong>Google</strong> — Data Analytics Professional Certificate<br />
+            <a
+              href="https://drive.google.com/file/d/1T-ysNsud1xMAp5OuU44tDIgs1WCHUYAZ/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Credential
+            </a>
+          </div>
+        </div>
+
+        <div className="cert-item">
+          <FontAwesomeIcon icon={faAws} />
+          <span><strong>AWS</strong> — Cloud Solutions Architect (Coursework)</span>
+        </div>
+
+        <div className="cert-item">
+          <FontAwesomeIcon icon={faMicrosoft} />
+          <span><strong>Microsoft</strong> — Power BI Data Analyst (Coursework)</span>
+        </div>
       </div>
     </div>
 
-    <div className="cert-item">
-      <FontAwesomeIcon icon={faAws} size="lg" />
-      <span><strong>AWS</strong> — Cloud Solutions Architect (Coursework)</span>
-    </div>
-
-    <div className="cert-item">
-      <FontAwesomeIcon icon={faMicrosoft} size="lg" />
-      <span><strong>Microsoft</strong> — Power BI Data Analyst (Coursework)</span>
-    </div>
-
-    <div className="cert-item">
-      <FontAwesomeIcon icon={faCertificate} size="lg" />
-      <span><strong>Coursera</strong> — Applied Data Analytics & Visualization</span>
-    </div>
-
   </div>
-</div>
-
-  </div>
-
 </section>
 
       {/* SKILLS */}
