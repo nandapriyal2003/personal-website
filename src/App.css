@@ -80,7 +80,7 @@ section h2 {
 .hero-content {
   display: flex;
   flex-direction: column;
-  align-items: center;        /* 🔥 THIS fixes the off-center issue */
+  align-items: center;      
   max-width: 900px;
   margin: 0 auto;
 }
@@ -94,12 +94,13 @@ section h2 {
 /* Typing line */
 .typing-effect {
   margin-top: 10px;
+  font-size: larger;
 }
 
 /* Summary — WIDER, CLEANER, AIRIER */
 .hero-summary {
-  max-width: 820px;           /* wider */
-  margin: 30px auto 0;        /* centers horizontally */
+  max-width: 1000px;           /* wider */
+  /* margin: 30px auto 0;        /* centers horizontally */
   padding: 0 20px;            /* breathing room on small screens */
   font-size: 1.05rem;
   line-height: 1.75;
