@@ -21,6 +21,7 @@ import nextjsimg from './assets/nextjs.png';
 import nodejsimg from './assets/nodejs.png';
 import reactjsimg from './assets/react.png';
 import pythonimg from './assets/python.png';
+import SQLimg from './assets/SQL.png'
 
 
 function App() {
