@@ -263,7 +263,7 @@ section h2 {
 /* Experience Grid (2x2) */
 .experience-section .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   max-width: 1100px;
   margin: 0 auto;
