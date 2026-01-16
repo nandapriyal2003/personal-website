@@ -88,13 +88,13 @@ function App() {
             </a>
           </div>
 
+          {/* SUMMARY — WIDER + LESS CLUTTERED */}
           <p className="hero-summary">
-            Strategic and analytical professional with hands-on experience in data analytics,
-            distributed systems, and data-driven product development. Demonstrated ability to
-            translate complex datasets into actionable insights, build scalable solutions, and
-            support decision-making across cross-functional teams. Particularly interested in
-            working at the intersection of technology, analytics, and real-world impact to drive
-            meaningful outcomes.
+            Strategic and analytical professional with hands-on experience in data analytics, distributed systems, 
+            and data-driven product development. Demonstrated ability to translate complex datasets into actionable 
+            insights, build scalable solutions, and support decision-making across cross-functional teams. 
+            Particularly interested in working at the intersection of technology, analytics, and real-world 
+            impact to drive meaningful outcomes.
           </p>
 
         </div>
@@ -145,36 +145,23 @@ function App() {
 
           <div className="project-card">
             <h3>Personal Website</h3>
-            <p>
-              Designed and developed a fully responsive personal portfolio website to showcase
-              projects, skills, and experiences using modern React-based UI patterns.
-            </p>
-            <p><strong>Technologies:</strong> React, Node.js, HTML, CSS</p>
-            <a
-              href="https://nandapriyal2003.github.io/personal-website/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <p>Designed and developed a fully responsive portfolio using React.</p>
+            <p><strong>Tech:</strong> React, Node.js, HTML, CSS</p>
+            <a href="https://nandapriyal2003.github.io/personal-website/" target="_blank" rel="noopener noreferrer">
               Visit Website
             </a>
           </div>
 
           <div className="project-card">
             <h3>Social Discovery App</h3>
-            <p>
-              Built a social platform enabling students to connect through shared music interests,
-              integrating Spotify APIs for personalized experiences.
-            </p>
-            <p><strong>Technologies:</strong> React, SQLite, Spotify API</p>
+            <p>Music-based social platform integrating Spotify API.</p>
+            <p><strong>Tech:</strong> React, SQLite, Spotify API</p>
           </div>
 
           <div className="project-card">
             <h3>Hack(H)er413 Website</h3>
-            <p>
-              Redesigned and deployed the official hackathon website and application dashboard,
-              improving usability and deployment reliability.
-            </p>
-            <p><strong>Technologies:</strong> React, MongoDB, AWS</p>
+            <p>Redesigned and deployed the official hackathon website and the Application Dashboard.</p>
+            <p><strong>Tech:</strong> React, MongoDB, AWS (SES, EC2)</p>
           </div>
 
         </div>
@@ -187,7 +174,7 @@ function App() {
 
           <div className="project-card">
             <h3>University of Massachusetts Amherst</h3>
-            <p><strong>Bachelor of Science in Computer Science</strong></p>
+            <p><strong>B.S. Computer Science</strong></p>
             <p>Minor in Business</p>
             <p>Expected Graduation: May 2026</p>
           </div>
@@ -197,17 +184,17 @@ function App() {
 
             <div className="cert-item">
               <FontAwesomeIcon icon={faGoogle} />&nbsp;
-              Google Data Analytics Professional Certificate
+              Data Analytics Professional Certificate
             </div>
 
             <div className="cert-item">
               <FontAwesomeIcon icon={faAws} />&nbsp;
-              AWS Cloud Solutions Architect (Coursework)
+              Cloud Solutions Architect (Coursework)
             </div>
 
             <div className="cert-item">
               <FontAwesomeIcon icon={faMicrosoft} />&nbsp;
-              Microsoft Power BI Data Analyst (Coursework)
+              Power BI Data Analyst (Coursework)
             </div>
 
           </div>
@@ -215,83 +202,28 @@ function App() {
         </div>
       </section>
 
-      {/* SKILLS — STATIC MIND MAP */}
-<section id="skills" className="section-green skills-section">
-  <h2>My Skills</h2>
-
-  <div className="skills-mindmap">
-
-    {/* CENTER */}
-    <div className="mindmap-center">
-      Core Skills
-    </div>
-
-    {/* PROGRAMMING */}
-    <div className="mindmap-branch branch-top">
-      <div className="branch-title">Programming</div>
-      <div className="branch-items">
-        <span>Python</span>
-        <span>Java</span>
-        <span>SQL</span>
-        <span>JavaScript</span>
-        <span>TypeScript</span>
-        <span>R</span>
-        <span>C</span>
-      </div>
-    </div>
-
-    {/* TOOLS & DATA */}
-    <div className="mindmap-branch branch-left">
-      <div className="branch-title">Data & Tools</div>
-      <div className="branch-items">
-        <span>Power BI</span>
-        <span>Databricks</span>
-        <span>Snowflake</span>
-        <span>PostgreSQL</span>
-        <span>Tableau</span>
-        <span>Excel</span>
-        <span>AWS</span>
-        <span>Azure DevOps</span>
-      </div>
-    </div>
-
-    {/* FRAMEWORKS */}
-    <div className="mindmap-branch branch-right">
-      <div className="branch-title">Frameworks</div>
-      <div className="branch-items">
-        <span>React</span>
-        <span>Node.js</span>
-        <span>Next.js</span>
-        <span>REST APIs</span>
-        <span>Git / GitHub</span>
-      </div>
-    </div>
-
-    {/* PROFESSIONAL */}
-    <div className="mindmap-branch branch-bottom">
-      <div className="branch-title">Professional</div>
-      <div className="branch-items">
-        <span>Data-Driven Decision Making</span>
-        <span>Cross-Functional Collaboration</span>
-        <span>Stakeholder Communication</span>
-        <span>Product Thinking</span>
-        <span>Technical Documentation</span>
-        <span>Research & Analysis</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
+      {/* SKILLS — GREEN */}
+      <section id="skills" className="section-green skills-section">
+        <h2>My Skills</h2>
+        <div className="skills-list">
+          {[pythonimg, SQLimg, javaimg, javascriptimg, postgresqlimg, typescriptimg, rimg,
+            htmlimg, cssimg, cimg, powerbiimg, databricksimg, snowflakeimg, tableauimg,
+            jiraimg, awsimg, excelimg, reactjsimg, nextjsimg, nodejsimg].map((img, i) => (
+              <div key={i} className="skill-item">
+                <img src={img} alt="skill" />
+              </div>
+          ))}
+        </div>
+      </section>
 
       {/* LEADERSHIP — BLACK */}
-      <section id="leadership" className="leadership-section section-dark">
+      <section id="leadership" className="leadership-section">
         <h2>Leadership</h2>
         <div className="projects-container">
           <div className="project-card">Resident Assistant — Residential Life</div>
           <div className="project-card">Vice President — Indian Student Union</div>
           <div className="project-card">Undergraduate Course Assistant — CICS</div>
-          <div className="project-card">Peer Advisor — Computer Science Department</div>
+          <div className="project-card">Peer Advisor — CS Department</div>
         </div>
       </section>
 
