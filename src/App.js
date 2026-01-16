@@ -151,6 +151,16 @@ function App() {
         <div className="projects-container">
 
           <div className="project-card">
+            <h3>Publication — IEEE VIS 2024 (Short Paper)</h3>
+            <p> Studied the ability of GPT-4 models to detect misleading visualizations by analyzing
+              thousands of tweet-visualization pairs and evaluating reasoning performance.</p>
+            <p><strong>Tech:</strong> Python, GPT-4, Prompt Engineering, NLP, Data Analysis</p>
+            <a href="https://doi.org/10.48550/arXiv.2408.12617" target="_blank" rel="noopener noreferrer">
+              View Publication (DOI)
+            </a>
+          </div>
+
+          <div className="project-card">
             <h3>Personal Website</h3>
             <p>Designed and developed a fully responsive portfolio using React.</p>
             <p><strong>Tech:</strong> React, Node.js, HTML, CSS</p>
