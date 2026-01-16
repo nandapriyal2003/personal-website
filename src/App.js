@@ -176,6 +176,16 @@ function App() {
               Visit Website
             </a>
           </div>
+          <div className="project-card">
+            <h3>Job Search App</h3>
+            <p>SwipeHire is a full-stack web application that helps college students discover jobs and 
+              internships through an intuitive swipe-based interface, automatically ranking opportunities 
+              based on resume and skill matching.</p>
+            <p><strong>Tech:</strong> React.js,Django, PostgreSQL, REST APIs</p>
+            <a href="https://drive.google.com/file/d/1YjAxYyWw4cCDezqE0MGVUJriipxFPqfq/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+              View Demo
+            </a>
+          </div>
 
         </div>
       </section>
