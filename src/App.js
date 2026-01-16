@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faInstagram, faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import TypingEffect from './TypingEffect'; // Typing effect component
 import './App.css';
@@ -65,6 +65,9 @@ function App() {
       </a>
       <a href="https://instagram.com/Priyal_nanda" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faInstagram} size="2x" />
+      </a>
+      <a href="https://github.com/nandapriyal2003" target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faGithub} size="2x" />
       </a>
     </div>
   </div>
