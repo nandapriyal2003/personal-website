@@ -214,6 +214,59 @@ section h2 {
   font-weight: bold;
   text-transform: uppercase;
 }
+/* =======================
+   SKILLS TICKER
+======================= */
+
+.skills-ticker {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+  position: relative;
+}
+
+.skills-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 35s linear infinite;
+}
+
+.skills-track:hover {
+  animation-play-state: paused;
+}
+
+.ticker-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 40px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+}
+
+.ticker-item img {
+  width: 36px;
+  height: 36px;
+}
+
+.ticker-item span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: black;
+  white-space: nowrap;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 
 /* =======================
    PROJECTS + LEADERSHIP

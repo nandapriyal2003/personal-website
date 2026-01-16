@@ -88,13 +88,13 @@ function App() {
             </a>
           </div>
 
-          {/* SUMMARY — WIDER + LESS CLUTTERED */}
           <p className="hero-summary">
-            Strategic and analytical professional with hands-on experience in data analytics, distributed systems, 
-            and data-driven product development. Demonstrated ability to translate complex datasets into actionable 
-            insights, build scalable solutions, and support decision-making across cross-functional teams. 
-            Particularly interested in working at the intersection of technology, analytics, and real-world 
-            impact to drive meaningful outcomes.
+            Strategic and analytical professional with hands-on experience in data analytics,
+            distributed systems, and data-driven product development. Demonstrated ability to
+            translate complex datasets into actionable insights, build scalable solutions, and
+            support decision-making across cross-functional teams. Particularly interested in
+            working at the intersection of technology, analytics, and real-world impact to drive
+            meaningful outcomes.
           </p>
 
         </div>
@@ -116,7 +116,7 @@ function App() {
           </div>
 
           <div className="project-card">
-            <h3>Dream Lab | Data Analytics Assistant</h3>
+            <h3>Dream Lab - Research for Exploration, Analytics, & Modeling | Data Analytics Assistant</h3>
             <p><strong>Sep 2023 – Feb 2024</strong></p>
             <ul>
               <li>Designed an incremental data analysis algorithm improving accuracy by 15%.</li>
@@ -145,23 +145,36 @@ function App() {
 
           <div className="project-card">
             <h3>Personal Website</h3>
-            <p>Designed and developed a fully responsive portfolio using React.</p>
-            <p><strong>Tech:</strong> React, Node.js, HTML, CSS</p>
-            <a href="https://nandapriyal2003.github.io/personal-website/" target="_blank" rel="noopener noreferrer">
+            <p>
+              Designed and developed a fully responsive personal portfolio website to showcase
+              projects, skills, and experiences using modern React-based UI patterns.
+            </p>
+            <p><strong>Technologies:</strong> React, Node.js, HTML, CSS</p>
+            <a
+              href="https://nandapriyal2003.github.io/personal-website/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Visit Website
             </a>
           </div>
 
           <div className="project-card">
             <h3>Social Discovery App</h3>
-            <p>Music-based social platform integrating Spotify API.</p>
-            <p><strong>Tech:</strong> React, SQLite, Spotify API</p>
+            <p>
+              Built a social platform enabling students to connect through shared music interests,
+              integrating Spotify APIs for personalized experiences.
+            </p>
+            <p><strong>Technologies:</strong> React, SQLite, Spotify API</p>
           </div>
 
           <div className="project-card">
             <h3>Hack(H)er413 Website</h3>
-            <p>Redesigned and deployed the official hackathon website.</p>
-            <p><strong>Tech:</strong> React, MongoDB, Heroku</p>
+            <p>
+              Redesigned and deployed the official hackathon website and application dashboard,
+              improving usability and deployment reliability.
+            </p>
+            <p><strong>Technologies:</strong> React, MongoDB, AWS</p>
           </div>
 
         </div>
@@ -174,7 +187,7 @@ function App() {
 
           <div className="project-card">
             <h3>University of Massachusetts Amherst</h3>
-            <p><strong>B.S. Computer Science</strong></p>
+            <p><strong>Bachelor of Science in Computer Science</strong></p>
             <p>Minor in Business</p>
             <p>Expected Graduation: May 2026</p>
           </div>
@@ -184,17 +197,17 @@ function App() {
 
             <div className="cert-item">
               <FontAwesomeIcon icon={faGoogle} />&nbsp;
-              Google — Data Analytics Professional Certificate
+              Google Data Analytics Professional Certificate
             </div>
 
             <div className="cert-item">
               <FontAwesomeIcon icon={faAws} />&nbsp;
-              AWS — Cloud Solutions Architect (Coursework)
+              AWS Cloud Solutions Architect (Coursework)
             </div>
 
             <div className="cert-item">
               <FontAwesomeIcon icon={faMicrosoft} />&nbsp;
-              Microsoft — Power BI Data Analyst (Coursework)
+              Microsoft Power BI Data Analyst (Coursework)
             </div>
 
           </div>
@@ -202,28 +215,78 @@ function App() {
         </div>
       </section>
 
-      {/* SKILLS — GREEN */}
+      {/* SKILLS — GREEN WITH LEFT-MOVING TICKER */}
       <section id="skills" className="section-green skills-section">
         <h2>My Skills</h2>
-        <div className="skills-list">
-          {[pythonimg, SQLimg, javaimg, javascriptimg, postgresqlimg, typescriptimg, rimg,
-            htmlimg, cssimg, cimg, powerbiimg, databricksimg, snowflakeimg, tableauimg,
-            jiraimg, awsimg, excelimg, reactjsimg, nextjsimg, nodejsimg].map((img, i) => (
-              <div key={i} className="skill-item">
-                <img src={img} alt="skill" />
+
+        <div className="skills-ticker">
+          <div className="skills-track">
+
+            {[
+              { img: pythonimg, name: 'Python' },
+              { img: SQLimg, name: 'SQL' },
+              { img: javaimg, name: 'Java' },
+              { img: javascriptimg, name: 'JavaScript' },
+              { img: postgresqlimg, name: 'PostgreSQL' },
+              { img: typescriptimg, name: 'TypeScript' },
+              { img: rimg, name: 'R' },
+              { img: htmlimg, name: 'HTML' },
+              { img: cssimg, name: 'CSS' },
+              { img: cimg, name: 'C' },
+              { img: powerbiimg, name: 'Power BI' },
+              { img: databricksimg, name: 'Databricks' },
+              { img: snowflakeimg, name: 'Snowflake' },
+              { img: tableauimg, name: 'Tableau' },
+              { img: jiraimg, name: 'Jira' },
+              { img: awsimg, name: 'AWS' },
+              { img: excelimg, name: 'Excel' },
+              { img: reactjsimg, name: 'React' },
+              { img: nextjsimg, name: 'Next.js' },
+              { img: nodejsimg, name: 'Node.js' }
+            ]
+            .concat(
+              [
+                { img: pythonimg, name: 'Python' },
+                { img: SQLimg, name: 'SQL' },
+                { img: javaimg, name: 'Java' },
+                { img: javascriptimg, name: 'JavaScript' },
+                { img: postgresqlimg, name: 'PostgreSQL' },
+                { img: typescriptimg, name: 'TypeScript' },
+                { img: rimg, name: 'R' },
+                { img: htmlimg, name: 'HTML' },
+                { img: cssimg, name: 'CSS' },
+                { img: cimg, name: 'C' },
+                { img: powerbiimg, name: 'Power BI' },
+                { img: databricksimg, name: 'Databricks' },
+                { img: snowflakeimg, name: 'Snowflake' },
+                { img: tableauimg, name: 'Tableau' },
+                { img: jiraimg, name: 'Jira' },
+                { img: awsimg, name: 'AWS' },
+                { img: excelimg, name: 'Excel' },
+                { img: reactjsimg, name: 'React' },
+                { img: nextjsimg, name: 'Next.js' },
+                { img: nodejsimg, name: 'Node.js' }
+              ]
+            )
+            .map((skill, index) => (
+              <div className="ticker-item" key={index}>
+                <img src={skill.img} alt={skill.name} />
+                <span>{skill.name}</span>
               </div>
-          ))}
+            ))}
+
+          </div>
         </div>
       </section>
 
       {/* LEADERSHIP — BLACK */}
-      <section id="leadership" className="leadership-section">
+      <section id="leadership" className="leadership-section section-dark">
         <h2>Leadership</h2>
         <div className="projects-container">
           <div className="project-card">Resident Assistant — Residential Life</div>
           <div className="project-card">Vice President — Indian Student Union</div>
           <div className="project-card">Undergraduate Course Assistant — CICS</div>
-          <div className="project-card">Peer Advisor — CS Department</div>
+          <div className="project-card">Peer Advisor — Computer Science Department</div>
         </div>
       </section>
 
