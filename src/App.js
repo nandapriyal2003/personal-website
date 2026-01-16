@@ -90,10 +90,11 @@ function App() {
 
           {/* SUMMARY — WIDER + LESS CLUTTERED */}
           <p className="hero-summary">
-            Computer Science student at the University of Massachusetts Amherst with hands-on
-            experience in data analytics, distributed systems, and data-driven product development.
-            I enjoy building scalable solutions, transforming complex data into actionable insights,
-            and working at the intersection of technology, analytics, and real-world impact.
+            Strategic and analytical professional with hands-on experience in data analytics, distributed systems, 
+            and data-driven product development. Demonstrated ability to translate complex datasets into actionable 
+            insights, build scalable solutions, and support decision-making across cross-functional teams. 
+            Particularly interested in working at the intersection of technology, analytics, and real-world 
+            impact to drive meaningful outcomes.
           </p>
 
         </div>
@@ -175,7 +176,7 @@ function App() {
             <h3>University of Massachusetts Amherst</h3>
             <p><strong>B.S. Computer Science</strong></p>
             <p>Minor in Business</p>
-            <p>Expected Graduation: Fall 2025</p>
+            <p>Expected Graduation: May 2026</p>
           </div>
 
           <div className="project-card">
