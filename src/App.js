@@ -149,6 +149,10 @@ function App() {
             <span>Python</span>
           </div>
           <div className="skill-item">
+            <img src={SQLimg} alt="SQL"/>
+            <span>SQL</span>
+          </div>
+          <div className="skill-item">
             <img src={javaimg} alt="JAVA" />
             <span>JAVA</span>
           </div>
