@@ -184,17 +184,17 @@ function App() {
 
             <div className="cert-item">
               <FontAwesomeIcon icon={faGoogle} />&nbsp;
-              <strong>Google</strong> — Data Analytics Professional Certificate
+              Google — Data Analytics Professional Certificate
             </div>
 
             <div className="cert-item">
               <FontAwesomeIcon icon={faAws} />&nbsp;
-              <strong>AWS</strong> — Cloud Solutions Architect (Coursework)
+              AWS — Cloud Solutions Architect (Coursework)
             </div>
 
             <div className="cert-item">
               <FontAwesomeIcon icon={faMicrosoft} />&nbsp;
-              <strong>Microsoft</strong> — Power BI Data Analyst (Coursework)
+              Microsoft — Power BI Data Analyst (Coursework)
             </div>
 
           </div>
