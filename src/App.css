@@ -218,8 +218,8 @@ section h2 {
    PROJECTS + LEADERSHIP
 ======================= */
 .projects-section {
-  padding: 70px 20px;
-  background-color: black;   /* solid black, no gray */
+  padding: 50px;
+  background: linear-gradient(to bottom, black, rgba(119, 252, 225, 0.56));
   text-align: center;
 }
 
@@ -250,6 +250,15 @@ section h2 {
 .project-card strong {
   color: #58e0c5;
 }
+/* =======================
+   LEADERSHIP SECTION (BLACK)
+======================= */
+.leadership-section {
+  padding: 70px 20px;
+  background-color: black;
+  text-align: center;
+}
+
 
 /* =======================
    CONTACT SECTION
