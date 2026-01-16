@@ -14,6 +14,17 @@ a {
 }
 
 /* =======================
+   CONSISTENT SECTION HEADERS
+======================= */
+section h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* =======================
    NAVIGATION BAR
 ======================= */
 .navbar {
@@ -62,10 +73,12 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 60px 20px;
-  background:
-    linear-gradient(to bottom, black, rgba(119, 252, 225, 0.56)),
-    url('/const.jpg') center / cover no-repeat;
+  padding: 50px 20px;
+  background: linear-gradient(
+    to bottom,
+    black,
+    rgba(119, 252, 225, 0.56)
+  );
   color: white;
   text-align: center;
   overflow: hidden;
@@ -271,4 +284,27 @@ a {
   font-size: 0.9rem;
   color: #d9d9d9;
   background-color: black;
+}
+
+/* =======================
+   CERTIFICATIONS (FontAwesome)
+======================= */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.cert-item svg {
+  color: #58e0c5; /* match theme accent */
+  min-width: 22px;
 }

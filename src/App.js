@@ -3,6 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import TypingEffect from './TypingEffect';
+import {
+  faGoogle,
+  faAws,
+  faMicrosoft
+} from '@fortawesome/free-brands-svg-icons';
+import { faCertificate } from '@fortawesome/free-solid-svg-icons';
+
 import './App.css';
 
 // Assets
@@ -38,8 +45,9 @@ function App() {
         <ul className="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#leadership">Leadership</a></li>
           <li>
             <a
@@ -77,6 +85,10 @@ function App() {
               <FontAwesomeIcon icon={faGithub} size="2x" />
             </a>
           </div>
+            <p className="hero-summary"> Computer Science student at the University of Massachusetts Amherst with experience in 
+              data analytics, distributed systems, and product-focused development. I enjoy building
+              scalable solutions, translating data into insights, and working at the intersection of
+              technology and real-world impact.</p>
         </div>
       </section>
 
@@ -114,35 +126,6 @@ function App() {
               <li>Oversaw localization, testing, and AWS-based analytics (S3) to evaluate performance and guide iterative design updates.</li>
             </ul>
           </div>
-
-        </div>
-      </section>
-
-      {/* SKILLS */}
-      <section id="skills" className="skills-section">
-        <h2>My Skills</h2>
-        <div className="skills-list">
-
-          <div className="skill-item"><img src={pythonimg} alt="Python" /><span>Python</span></div>
-          <div className="skill-item"><img src={SQLimg} alt="SQL" /><span>SQL</span></div>
-          <div className="skill-item"><img src={javaimg} alt="Java" /><span>Java</span></div>
-          <div className="skill-item"><img src={javascriptimg} alt="JavaScript" /><span>JavaScript</span></div>
-          <div className="skill-item"><img src={postgresqlimg} alt="PostgreSQL" /><span>PostgreSQL</span></div>
-          <div className="skill-item"><img src={typescriptimg} alt="TypeScript" /><span>TypeScript</span></div>
-          <div className="skill-item"><img src={rimg} alt="R" /><span>R</span></div>
-          <div className="skill-item"><img src={htmlimg} alt="HTML" /><span>HTML</span></div>
-          <div className="skill-item"><img src={cssimg} alt="CSS" /><span>CSS</span></div>
-          <div className="skill-item"><img src={cimg} alt="C" /><span>C</span></div>
-          <div className="skill-item"><img src={powerbiimg} alt="Power BI" /><span>Power BI</span></div>
-          <div className="skill-item"><img src={databricksimg} alt="Databricks" /><span>Databricks</span></div>
-          <div className="skill-item"><img src={snowflakeimg} alt="Snowflake" /><span>Snowflake</span></div>
-          <div className="skill-item"><img src={tableauimg} alt="Tableau" /><span>Tableau</span></div>
-          <div className="skill-item"><img src={jiraimg} alt="Jira" /><span>Jira</span></div>
-          <div className="skill-item"><img src={awsimg} alt="AWS" /><span>AWS</span></div>
-          <div className="skill-item"><img src={excelimg} alt="Excel" /><span>Excel</span></div>
-          <div className="skill-item"><img src={reactjsimg} alt="React" /><span>React</span></div>
-          <div className="skill-item"><img src={nextjsimg} alt="Next.js" /><span>Next.js</span></div>
-          <div className="skill-item"><img src={nodejsimg} alt="Node.js" /><span>Node.js</span></div>
 
         </div>
       </section>
@@ -187,6 +170,90 @@ function App() {
               Visit HackHer Website
             </a>
           </div>
+
+        </div>
+      </section>
+      {/* EDUCATION */}
+<section id="education" className="projects-section">
+  <h2>Education</h2>
+
+  <div className="projects-container">
+
+    {/* Degree Card */}
+    <div className="project-card">
+      <h3>University of Massachusetts Amherst</h3>
+      <p><strong>Bachelor of Science in Computer Science</strong></p>
+      <p>Minor in Business</p>
+      <p>Expected Graduation: Fall 2025</p>
+    </div>
+
+    {/* Certifications Card */}
+<div className="project-card">
+  <h3>Certifications</h3>
+
+  <div className="cert-list">
+
+    <div className="cert-item">
+      <FontAwesomeIcon icon={faGoogle} size="lg" />
+      <div>
+        <strong>Google</strong> — Data Analytics Professional Certificate<br />
+        <a
+          href="https://drive.google.com/file/d/1T-ysNsud1xMAp5OuU44tDIgs1WCHUYAZ/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Credential
+        </a>
+      </div>
+    </div>
+
+    <div className="cert-item">
+      <FontAwesomeIcon icon={faAws} size="lg" />
+      <span><strong>AWS</strong> — Cloud Solutions Architect (Coursework)</span>
+    </div>
+
+    <div className="cert-item">
+      <FontAwesomeIcon icon={faMicrosoft} size="lg" />
+      <span><strong>Microsoft</strong> — Power BI Data Analyst (Coursework)</span>
+    </div>
+
+    <div className="cert-item">
+      <FontAwesomeIcon icon={faCertificate} size="lg" />
+      <span><strong>Coursera</strong> — Applied Data Analytics & Visualization</span>
+    </div>
+
+  </div>
+</div>
+
+  </div>
+
+</section>
+
+      {/* SKILLS */}
+      <section id="skills" className="skills-section">
+        <h2>My Skills</h2>
+        <div className="skills-list">
+
+          <div className="skill-item"><img src={pythonimg} alt="Python" /><span>Python</span></div>
+          <div className="skill-item"><img src={SQLimg} alt="SQL" /><span>SQL</span></div>
+          <div className="skill-item"><img src={javaimg} alt="Java" /><span>Java</span></div>
+          <div className="skill-item"><img src={javascriptimg} alt="JavaScript" /><span>JavaScript</span></div>
+          <div className="skill-item"><img src={postgresqlimg} alt="PostgreSQL" /><span>PostgreSQL</span></div>
+          <div className="skill-item"><img src={typescriptimg} alt="TypeScript" /><span>TypeScript</span></div>
+          <div className="skill-item"><img src={rimg} alt="R" /><span>R</span></div>
+          <div className="skill-item"><img src={htmlimg} alt="HTML" /><span>HTML</span></div>
+          <div className="skill-item"><img src={cssimg} alt="CSS" /><span>CSS</span></div>
+          <div className="skill-item"><img src={cimg} alt="C" /><span>C</span></div>
+          <div className="skill-item"><img src={powerbiimg} alt="Power BI" /><span>Power BI</span></div>
+          <div className="skill-item"><img src={databricksimg} alt="Databricks" /><span>Databricks</span></div>
+          <div className="skill-item"><img src={snowflakeimg} alt="Snowflake" /><span>Snowflake</span></div>
+          <div className="skill-item"><img src={tableauimg} alt="Tableau" /><span>Tableau</span></div>
+          <div className="skill-item"><img src={jiraimg} alt="Jira" /><span>Jira</span></div>
+          <div className="skill-item"><img src={awsimg} alt="AWS" /><span>AWS</span></div>
+          <div className="skill-item"><img src={excelimg} alt="Excel" /><span>Excel</span></div>
+          <div className="skill-item"><img src={reactjsimg} alt="React" /><span>React</span></div>
+          <div className="skill-item"><img src={nextjsimg} alt="Next.js" /><span>Next.js</span></div>
+          <div className="skill-item"><img src={nodejsimg} alt="Node.js" /><span>Node.js</span></div>
 
         </div>
       </section>
