@@ -118,10 +118,6 @@ function App() {
 
       {/* HERO */}
       <section id="home" className="hero-section">
-        <div className="hero-blob hero-blob-1" />
-        <div className="hero-blob hero-blob-2" />
-        <div className="hero-blob hero-blob-3" />
-
         <div className="hero-content">
           <div className="hero-image">
             <img src={profileImage} alt="Priyal Nanda" />
@@ -432,7 +428,7 @@ function App() {
       </section>
 
       <footer className="footer">
-        © 2026 Priyal Nanda · Designed & built with 💜 and React
+        © 2026 Priyal Nanda · Designed & built with care
       </footer>
 
     </div>
