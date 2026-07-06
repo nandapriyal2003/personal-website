@@ -166,7 +166,7 @@ function App() {
                 <img src={hackherLogo} alt="Hack(H)er413 Logo" className="exp-logo" />
                 <h3>Hack(H)er413 · Technical Team Lead</h3>
               </div>
-              <p className="card-date">Oct 2024 – Present</p>
+              <p className="card-date">Oct 2024 – Feb 2026</p>
               <ul>
                 <li>Led development of a full-stack registration platform using React and Node.js that supported 500+ participants and served as the primary event management system.</li>
                 <li>Built REST APIs and integrated AWS SES for automated email workflows, reducing manual communication overhead.</li>
@@ -268,9 +268,11 @@ function App() {
           <Reveal>
             <div className="project-card accent-mint">
               <h3>Distributed Vector Databases</h3>
-              <p>Research on distributed vector database architectures — scaling embedding storage and
-                similarity search across nodes for large-scale AI workloads.</p>
-              <TechTags tags={['Research', 'Vector Databases', 'Distributed Systems']} />
+              <p>Built a distributed vector search system with FAISS and transformer embeddings to evaluate
+                workload distribution, latency, and scalability across large-scale retrieval environments.
+                Designed a workload-balancing algorithm that cut server load imbalance by over 70% while
+                preserving retrieval performance across distributed deployments.</p>
+              <TechTags tags={['FAISS', 'Transformer Embeddings', 'Distributed Systems', 'Python']} />
             </div>
           </Reveal>
 

@@ -5,12 +5,11 @@ function TypingEffect() {
   return (
     <Typed
       strings={[
-        'Data Engineer',
+        'Product Manager',
         'Data Analyst',
-        'AI Solutions Architect',
-        'Front-End Developer',
-        'Software Engineer',
-        'ML Researcher',
+        'AI/ML Engineer',
+        'Software Developer',
+        'Data Engineer',
       ]}
       typeSpeed={50}
       backSpeed={30}
