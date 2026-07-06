@@ -367,6 +367,15 @@ a:hover {
   font-weight: 600;
 }
 
+.card-links {
+  display: flex;
+  gap: 22px;
+}
+
+.card-links a {
+  margin-top: 15px;
+}
+
 /* Tech tag chips — quiet, uniform */
 .tech-tags {
   display: flex;

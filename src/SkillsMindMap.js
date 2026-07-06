@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './SkillsMindMap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faDatabase, faTools, faUserTie, faGlobe, faServer, faFileAlt, faBrain, faComments, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faDatabase, faTools, faUserTie, faGlobe, faServer, faFileAlt, faBrain, faComments, faSearch, faRobot, faTerminal } from '@fortawesome/free-solid-svg-icons';
 import { faAws, faGithub, faMicrosoft, faGitAlt, faPython, faJava, faJsSquare, faReact, faNodeJs, faDocker } from '@fortawesome/free-brands-svg-icons';
 
 /* Import Images */
@@ -68,6 +68,8 @@ const skillCategories = [
             { name: 'Next.js', img: nextjsimg },
             { name: 'Git / GitHub', icon: faGithub },
             { name: 'REST APIs', icon: faGlobe },
+            { name: 'Claude Code', icon: faRobot },
+            { name: 'OpenAI Codex', icon: faTerminal },
         ]
     },
     {
@@ -77,7 +79,7 @@ const skillCategories = [
         skills: [
             { name: 'Data-driven Decisions', icon: faBrain },
             { name: 'Cross-functional Collab', icon: faUserTie },
-            { name: 'Stakeholder Comm', icon: faComments },
+            { name: 'Stakeholder Communication', icon: faComments },
             { name: 'Problem Solving', icon: faTools },
             { name: 'Research & Analysis', icon: faSearch },
             { name: 'Tech Documentation', icon: faFileAlt },

@@ -259,9 +259,14 @@ function App() {
               <p>Turns raw lecture notes into structured, AI-generated study summaries — paste your notes,
                 get clean outlines and key takeaways in seconds.</p>
               <TechTags tags={['React', 'Vite', 'OpenAI API', 'Vercel Serverless']} />
-              <a href="https://github.com/nandapriyal2003/studyspark" target="_blank" rel="noopener noreferrer">
-                View on GitHub →
-              </a>
+              <div className="card-links">
+                <a href="https://studyspark-livid.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  Visit Site →
+                </a>
+                <a href="https://github.com/nandapriyal2003/studyspark" target="_blank" rel="noopener noreferrer">
+                  GitHub →
+                </a>
+              </div>
             </div>
           </Reveal>
 
