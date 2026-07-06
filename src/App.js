@@ -8,7 +8,7 @@ import {
   faAws,
   faMicrosoft
 } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faFlask } from '@fortawesome/free-solid-svg-icons';
 import TypingEffect from './TypingEffect';
 import SkillsMindMap from './SkillsMindMap';
 import './App.css';
@@ -79,10 +79,9 @@ function TechTags({ tags }) {
   );
 }
 
-function SectionHeader({ kicker, title }) {
+function SectionHeader({ title }) {
   return (
     <div className="section-header">
-      <span className="section-kicker">{kicker}</span>
       <h2>{title}</h2>
     </div>
   );
@@ -113,7 +112,7 @@ function App() {
             </a>
           </li>
         </ul>
-        <a href="#contact" className="cta-button">Let’s Talk ✨</a>
+        <a href="#contact" className="cta-button">Let’s Talk</a>
       </nav>
 
       {/* HERO */}
@@ -123,13 +122,13 @@ function App() {
             <img src={profileImage} alt="Priyal Nanda" />
           </div>
 
-          <h1>Hi, I'm <span className="highlight">Priyal Nanda</span> 👋</h1>
+          <h1>Hi, I'm <span className="highlight">Priyal Nanda</span></h1>
           <p className="typing-effect"><TypingEffect /></p>
 
           <div className="hero-badges">
-            <span className="hero-badge">🎓 UMass Amherst '26</span>
-            <span className="hero-badge">💻 CS + Business</span>
-            <span className="hero-badge">📊 Data × Product</span>
+            <span className="hero-badge">UMass Amherst '26</span>
+            <span className="hero-badge">CS + Business</span>
+            <span className="hero-badge">Data × Product</span>
           </div>
 
           <div className="social-links">
@@ -158,7 +157,7 @@ function App() {
 
       {/* EXPERIENCE */}
       <section id="experience" className="section experience-section">
-        <SectionHeader kicker="💼 Where I've worked" title="Experience" />
+        <SectionHeader title="Experience" />
         <div className="projects-container">
 
           <Reveal>
@@ -194,7 +193,7 @@ function App() {
           <Reveal>
             <div className="project-card accent-pink">
               <div className="card-header-flex">
-                <div className="exp-logo exp-logo-emoji">🔬</div>
+                <div className="exp-logo exp-logo-emoji"><FontAwesomeIcon icon={faFlask} /></div>
                 <h3>HCI-VIS Lab · Research Intern</h3>
               </div>
               <p className="card-date">May 2023 – May 2025</p>
@@ -241,12 +240,12 @@ function App() {
 
       {/* PROJECTS */}
       <section id="projects" className="section section-alt projects-section">
-        <SectionHeader kicker="🛠️ Things I've built" title="Projects" />
+        <SectionHeader title="Projects" />
         <div className="projects-container">
 
           <Reveal>
             <div className="project-card accent-sky">
-              <h3>🤖 Nova Agent</h3>
+              <h3>Nova Agent</h3>
               <p>Personal AI life-ops agent — a Discord-based assistant powered by an LLM agent gateway that
                 manages tasks, notes, and daily planning across Notion and Obsidian, with persistent memory,
                 scheduled routines, and a Next.js dashboard.</p>
@@ -256,7 +255,7 @@ function App() {
 
           <Reveal delay={80}>
             <div className="project-card accent-amber">
-              <h3>⚡ Study Spark</h3>
+              <h3>Study Spark</h3>
               <p>Turns raw lecture notes into structured, AI-generated study summaries — paste your notes,
                 get clean outlines and key takeaways in seconds.</p>
               <TechTags tags={['React', 'Vite', 'OpenAI API', 'Vercel Serverless']} />
@@ -268,7 +267,7 @@ function App() {
 
           <Reveal>
             <div className="project-card accent-mint">
-              <h3>🧠 Distributed Vector Databases</h3>
+              <h3>Distributed Vector Databases</h3>
               <p>Research on distributed vector database architectures — scaling embedding storage and
                 similarity search across nodes for large-scale AI workloads.</p>
               <TechTags tags={['Research', 'Vector Databases', 'Distributed Systems']} />
@@ -277,7 +276,7 @@ function App() {
 
           <Reveal delay={80}>
             <div className="project-card accent-violet">
-              <h3>📊 Detecting Misleading Visualizations — IEEE VIS 2024</h3>
+              <h3>Detecting Misleading Visualizations — IEEE VIS 2024</h3>
               <p>Published short paper studying the ability of GPT-4 models to detect misleading visualizations
                 by analyzing thousands of tweet–visualization pairs and evaluating reasoning performance.</p>
               <TechTags tags={['Python', 'GPT-4', 'Prompt Engineering', 'NLP', 'Data Analysis']} />
@@ -289,7 +288,7 @@ function App() {
 
           <Reveal delay={80}>
             <div className="project-card accent-mint">
-              <h3>🎧 Spotifynder</h3>
+              <h3>Spotifynder</h3>
               <p>Music-based social discovery platform — sign in with Spotify to build a profile from your music
                 taste and get matched with people who share it.</p>
               <TechTags tags={['React', 'SQLite', 'Spotify API']} />
@@ -301,7 +300,7 @@ function App() {
 
           <Reveal>
             <div className="project-card accent-pink">
-              <h3>💼 SwipeHire — Job Search App</h3>
+              <h3>SwipeHire — Job Search App</h3>
               <p>Full-stack web app that helps college students discover jobs and internships through an
                 intuitive swipe-based interface, automatically ranking opportunities by resume and skill matching.</p>
               <TechTags tags={['React.js', 'Django', 'PostgreSQL', 'REST APIs']} />
@@ -313,7 +312,7 @@ function App() {
 
           <Reveal delay={80}>
             <div className="project-card accent-sky">
-              <h3>🚀 Hack(H)er413 Website</h3>
+              <h3>Hack(H)er413 Website</h3>
               <p>Redesigned and deployed the official hackathon website and the Application Dashboard used by
                 hundreds of applicants.</p>
               <TechTags tags={['React', 'MongoDB', 'AWS SES', 'AWS EC2']} />
@@ -325,7 +324,7 @@ function App() {
 
           <Reveal>
             <div className="project-card accent-amber">
-              <h3>🛡️ Hate Speech Detection with ML</h3>
+              <h3>Hate Speech Detection with ML</h3>
               <p>Research project analyzing methods and datasets for hate speech detection, proposing effective
                 machine-learning approaches to combat its spread on social media.</p>
               <TechTags tags={['Python', 'Machine Learning', 'NLP', 'Research']} />
@@ -334,7 +333,7 @@ function App() {
 
           <Reveal delay={80}>
             <div className="project-card accent-violet">
-              <h3>🌸 Personal Website</h3>
+              <h3>Personal Website</h3>
               <p>The site you're looking at! Designed and built from scratch — fully responsive, animated, and
                 deployed on GitHub Pages.</p>
               <TechTags tags={['React', 'CSS', 'GitHub Pages']} />
@@ -349,7 +348,7 @@ function App() {
 
       {/* EDUCATION */}
       <section id="education" className="section education-section">
-        <SectionHeader kicker="🎓 Where I've studied" title="Education & Certifications" />
+        <SectionHeader title="Education & Certifications" />
         <div className="education-container">
 
           <Reveal>
@@ -383,26 +382,26 @@ function App() {
 
       {/* SKILLS */}
       <section id="skills" className="section section-alt skills-section">
-        <SectionHeader kicker="🧰 My toolbox" title="Skills" />
+        <SectionHeader title="Skills" />
         <SkillsMindMap />
       </section>
 
       {/* LEADERSHIP */}
       <section id="leadership" className="section leadership-section">
-        <SectionHeader kicker="🌟 Beyond the code" title="Leadership" />
+        <SectionHeader title="Leadership" />
         <div className="projects-container leadership-grid">
-          <Reveal><div className="project-card lead-card">🏠 Resident Assistant — Residential Life</div></Reveal>
-          <Reveal delay={60}><div className="project-card lead-card">⚡ Head of Technology — Hack(H)er413</div></Reveal>
-          <Reveal delay={120}><div className="project-card lead-card">🧑‍🏫 Undergraduate Course Assistant — CICS</div></Reveal>
-          <Reveal><div className="project-card lead-card">🧭 Peer Advisor — CS Department</div></Reveal>
-          <Reveal delay={60}><div className="project-card lead-card">💰 Treasurer — Indian Student Union</div></Reveal>
-          <Reveal delay={120}><div className="project-card lead-card">🏛️ Senator — Student Government Association</div></Reveal>
+          <Reveal><div className="project-card lead-card">Resident Assistant — Residential Life</div></Reveal>
+          <Reveal delay={60}><div className="project-card lead-card">Head of Technology — Hack(H)er413</div></Reveal>
+          <Reveal delay={120}><div className="project-card lead-card">Undergraduate Course Assistant — CICS</div></Reveal>
+          <Reveal><div className="project-card lead-card">Peer Advisor — CS Department</div></Reveal>
+          <Reveal delay={60}><div className="project-card lead-card">Treasurer — Indian Student Union</div></Reveal>
+          <Reveal delay={120}><div className="project-card lead-card">Senator — Student Government Association</div></Reveal>
         </div>
       </section>
 
       {/* CONTACT */}
       <section id="contact" className="section contact-section">
-        <SectionHeader kicker="📬 Say hello" title="Let's build something together" />
+        <SectionHeader title="Let's build something together" />
         <p className="contact-blurb">
           Whether it's a role, a project, or just a good conversation about data — my inbox is always open.
         </p>
