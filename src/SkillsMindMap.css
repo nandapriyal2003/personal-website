@@ -1,35 +1,55 @@
-/* SkillsMindMap.css REFACTORED for Grid Layout */
+/* Skills grid — matches the aurora theme in App.css */
 
 .skills-grid-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 20px 20px;
+    padding: 10px 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 26px;
     justify-content: center;
 }
 
-/* Category Column/Card */
+/* Category Card */
 .skill-category-card {
-    background: #1e293b;
-    /* Slate 800 */
-    border: 1px solid #334155;
-    /* Slate 700 */
+    position: relative;
+    background: rgba(30, 41, 59, 0.55);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(148, 163, 184, 0.16);
     border-radius: 16px;
     padding: 30px 20px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
+.skill-category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    opacity: 0.85;
+}
+
+.skill-category-card:nth-child(1)::before { background: linear-gradient(90deg, #38bdf8, #7dd3fc); }
+.skill-category-card:nth-child(2)::before { background: linear-gradient(90deg, #a78bfa, #c4b5fd); }
+.skill-category-card:nth-child(3)::before { background: linear-gradient(90deg, #f472b6, #f9a8d4); }
+.skill-category-card:nth-child(4)::before { background: linear-gradient(90deg, #34d399, #6ee7b7); }
+
+.skill-category-card:nth-child(1) .header-icon { color: #38bdf8; }
+.skill-category-card:nth-child(2) .header-icon { color: #a78bfa; }
+.skill-category-card:nth-child(3) .header-icon { color: #f472b6; }
+.skill-category-card:nth-child(4) .header-icon { color: #34d399; }
+
 .skill-category-card:hover {
-    transform: translateY(-5px);
-    border-color: #38bdf8;
-    /* Sky Blue Accent */
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-6px);
+    border-color: rgba(148, 163, 184, 0.35);
+    box-shadow: 0 18px 40px -12px rgba(0, 0, 0, 0.5);
 }
 
 /* Header within Card */
@@ -39,76 +59,66 @@
 }
 
 .skill-category-header h3 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 10px 0 0;
     color: #f1f5f9;
-    /* Slate 100 */
     font-weight: 700;
 }
 
 .header-icon {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #38bdf8;
-    /* Sky Blue Accent */
 }
 
-/* Skills List/Grid within Card */
+/* Skills List within Card */
 .skills-list-grid {
     display: flex;
     flex-direction: column;
-    /* List style for readability */
-    gap: 15px;
+    gap: 12px;
     width: 100%;
 }
 
-/* Inidividual Skill Item */
 .skill-item-row {
     display: flex;
     align-items: center;
     gap: 15px;
     padding: 10px 15px;
-    background-color: #0f172a;
-    /* Slate 900 - Darker inner bg */
-    border-radius: 8px;
-    transition: background-color 0.2s ease;
+    background-color: rgba(11, 16, 32, 0.6);
+    border-radius: 10px;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
     border: 1px solid transparent;
 }
 
 .skill-item-row:hover {
-    background-color: #334155;
-    /* Slate 700 */
-    border-color: #475569;
+    background-color: rgba(148, 163, 184, 0.12);
+    border-color: rgba(148, 163, 184, 0.3);
+    transform: translateX(4px);
 }
 
 .skill-item-row img {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
-    /* Make logos white */
     filter: brightness(0) invert(1);
     opacity: 0.9;
 }
 
 .skill-item-row svg {
-    /* FontAwesome Icons */
     color: white !important;
-    /* Force white */
-    font-size: 1.5rem;
-    width: 32px;
+    font-size: 1.4rem;
+    width: 30px;
     text-align: center;
 }
 
 .skill-icon-placeholder {
-    width: 32px;
+    width: 30px;
     display: flex;
     justify-content: center;
 }
 
 .skill-item-row span {
-    font-size: 1rem;
+    font-size: 0.98rem;
     color: #cbd5e1;
-    /* Slate 300 */
     font-weight: 500;
 }
 
@@ -116,13 +126,11 @@
 @media (max-width: 1200px) {
     .skills-grid-container {
         grid-template-columns: repeat(2, 1fr);
-        /* 2x2 grid */
     }
 }
 
 @media (max-width: 600px) {
     .skills-grid-container {
         grid-template-columns: 1fr;
-        /* Stack vertically */
     }
 }

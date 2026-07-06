@@ -91,7 +91,7 @@ const SkillsMindMap = () => {
             {skillCategories.map((cat) => (
                 <div key={cat.id} className="skill-category-card">
                     <div className="skill-category-header">
-                        <FontAwesomeIcon icon={cat.icon} className="header-icon" style={{ color: '#38bdf8' }} />
+                        <FontAwesomeIcon icon={cat.icon} className="header-icon" />
                         <h3>{cat.title}</h3>
                     </div>
 
