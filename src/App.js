@@ -401,8 +401,6 @@ function App() {
           <Reveal delay={60}><div className="project-card lead-card">Technical Team Lead — Hack(H)er413</div></Reveal>
           <Reveal delay={120}><div className="project-card lead-card">Undergraduate Course Assistant — CICS</div></Reveal>
           <Reveal><div className="project-card lead-card">Peer Advisor — CS Department</div></Reveal>
-          <Reveal delay={60}><div className="project-card lead-card">Treasurer — Indian Student Union</div></Reveal>
-          <Reveal delay={120}><div className="project-card lead-card">Senator — Student Government Association</div></Reveal>
         </div>
       </section>
 
