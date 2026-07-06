@@ -391,7 +391,7 @@ function App() {
         <SectionHeader title="Leadership" />
         <div className="projects-container leadership-grid">
           <Reveal><div className="project-card lead-card">Resident Assistant — Residential Life</div></Reveal>
-          <Reveal delay={60}><div className="project-card lead-card">Head of Technology — Hack(H)er413</div></Reveal>
+          <Reveal delay={60}><div className="project-card lead-card">Technical Team Lead — Hack(H)er413</div></Reveal>
           <Reveal delay={120}><div className="project-card lead-card">Undergraduate Course Assistant — CICS</div></Reveal>
           <Reveal><div className="project-card lead-card">Peer Advisor — CS Department</div></Reveal>
           <Reveal delay={60}><div className="project-card lead-card">Treasurer — Indian Student Union</div></Reveal>
@@ -403,7 +403,7 @@ function App() {
       <section id="contact" className="section contact-section">
         <SectionHeader title="Let's build something together" />
         <p className="contact-blurb">
-          Whether it's a role, a project, or just a good conversation about data — my inbox is always open.
+          Whether it's a role, a project, or just a good conversation — my inbox is always open.
         </p>
 
         <a href="mailto:nandapriyal2003@gmail.com" className="cta-button cta-large">
