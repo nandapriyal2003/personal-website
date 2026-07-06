@@ -169,13 +169,13 @@ function App() {
             <div className="project-card accent-sky">
               <div className="card-header-flex">
                 <img src={hackherLogo} alt="Hack(H)er413 Logo" className="exp-logo" />
-                <h3>Hack(H)er413 · Head of Technology</h3>
+                <h3>Hack(H)er413 · Technical Team Lead</h3>
               </div>
               <p className="card-date">Oct 2024 – Present</p>
               <ul>
-                <li>Developed a registration dashboard for 500+ attendees; optimized backend workflows to automate event processes.</li>
-                <li>Enhanced hackathon website UI/UX with HTML, CSS, JavaScript, improving accessibility and engagement by 30%.</li>
-                <li>Integrated analytics tools to monitor participant engagement and led technical coordination across the team.</li>
+                <li>Led development of a full-stack registration platform using React and Node.js that supported 500+ participants and served as the primary event management system.</li>
+                <li>Built REST APIs and integrated AWS SES for automated email workflows, reducing manual communication overhead.</li>
+                <li>Deployed and maintained production infrastructure on AWS EC2 while improving frontend performance and accessibility, increasing user engagement by 35%.</li>
               </ul>
             </div>
           </Reveal>
@@ -201,11 +201,11 @@ function App() {
                 <div className="exp-logo exp-logo-emoji">🔬</div>
                 <h3>HCI-VIS Lab · Research Intern</h3>
               </div>
-              <p className="card-date">May 2023 – Aug 2024</p>
+              <p className="card-date">May 2023 – May 2025</p>
               <ul>
-                <li>Developed a model to identify deceptive data visualizations, addressing the spread of misinformation online.</li>
-                <li>Leveraged Convolutional Neural Networks (CNNs) and Large Language Models for deep-learning analysis.</li>
-                <li>Built ML pipelines in Python (TensorFlow, PyTorch, Keras); co-authored a short paper published at IEEE VIS 2024.</li>
+                <li>Developed a GPT-4 based detection pipeline for identifying misleading visualizations, applying prompt engineering techniques across 9.9K labeled examples and 3.2K tweet-visualization pairs.</li>
+                <li>Designed and evaluated zero-shot and few-shot prompting strategies, improving model performance by 38% in detecting misleading visualizations.</li>
+                <li>Evaluated model performance across multiple prompting approaches to identify effective strategies for visual misinformation detection.</li>
               </ul>
             </div>
           </Reveal>
@@ -229,13 +229,13 @@ function App() {
             <div className="project-card accent-amber">
               <div className="card-header-flex">
                 <img src={buildLogo} alt="BUILD UMass Logo" className="exp-logo" />
-                <h3>BUILD UMass · Technical Analyst</h3>
+                <h3>BUILD UMass · Product Manager</h3>
               </div>
               <p className="card-date">Feb 2023 – May 2025</p>
               <ul>
-                <li>Conducted Python-based analytics for a multilingual health application.</li>
-                <li>Collaborated with developers using AWS and Azure DevOps pipelines.</li>
-                <li>Evaluated performance using AWS S3 analytics.</li>
+                <li>Utilized the MERN stack to develop a client webpage, with a primary focus on the frontend using React.js.</li>
+                <li>Led meetings with internal team members, clients, and project leads.</li>
+                <li>Oversaw end-to-end website development, including design and optimization, ensuring a cohesive online presence.</li>
               </ul>
             </div>
           </Reveal>
@@ -249,6 +249,40 @@ function App() {
         <div className="projects-container">
 
           <Reveal>
+            <div className="project-card accent-sky">
+              <h3>🤖 Nova Agent</h3>
+              <p>Personal AI life-ops agent — a Discord-based assistant powered by an LLM agent gateway that
+                manages tasks, notes, and daily planning across Notion and Obsidian, with persistent memory,
+                scheduled routines, and a Next.js dashboard.</p>
+              <TechTags tags={['AI Agents', 'Discord', 'Notion API', 'Next.js', 'Node.js']} />
+              <a href="https://github.com/nandapriyal2003/nova-core" target="_blank" rel="noopener noreferrer">
+                View on GitHub →
+              </a>
+            </div>
+          </Reveal>
+
+          <Reveal delay={80}>
+            <div className="project-card accent-amber">
+              <h3>⚡ Study Spark</h3>
+              <p>Turns raw lecture notes into structured, AI-generated study summaries — paste your notes,
+                get clean outlines and key takeaways in seconds.</p>
+              <TechTags tags={['React', 'Vite', 'OpenAI API', 'Vercel Serverless']} />
+              <a href="https://github.com/nandapriyal2003/studyspark" target="_blank" rel="noopener noreferrer">
+                View on GitHub →
+              </a>
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div className="project-card accent-mint">
+              <h3>🧠 Distributed Vector Databases</h3>
+              <p>Research on distributed vector database architectures — scaling embedding storage and
+                similarity search across nodes for large-scale AI workloads.</p>
+              <TechTags tags={['Research', 'Vector Databases', 'Distributed Systems']} />
+            </div>
+          </Reveal>
+
+          <Reveal delay={80}>
             <div className="project-card accent-violet">
               <h3>📊 Detecting Misleading Visualizations — IEEE VIS 2024</h3>
               <p>Published short paper studying the ability of GPT-4 models to detect misleading visualizations
