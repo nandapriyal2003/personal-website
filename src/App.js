@@ -255,9 +255,6 @@ function App() {
                 manages tasks, notes, and daily planning across Notion and Obsidian, with persistent memory,
                 scheduled routines, and a Next.js dashboard.</p>
               <TechTags tags={['AI Agents', 'Discord', 'Notion API', 'Next.js', 'Node.js']} />
-              <a href="https://github.com/nandapriyal2003/nova-core" target="_blank" rel="noopener noreferrer">
-                View on GitHub →
-              </a>
             </div>
           </Reveal>
 
