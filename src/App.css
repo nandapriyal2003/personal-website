@@ -510,6 +510,12 @@ a:hover {
   flex-shrink: 0;
 }
 
+/* Keep company logos on a light backing so colored/dark logos stay legible in dark mode */
+:root[data-theme='dark'] .exp-logo {
+  background-color: #F2EAE0;
+  border-color: #F2EAE0;
+}
+
 .exp-logo-emoji {
   display: flex;
   align-items: center;
@@ -517,6 +523,10 @@ a:hover {
   font-size: 1.4rem;
   background: var(--tint);
   color: var(--secondary);
+}
+
+:root[data-theme='dark'] .exp-logo-emoji {
+  background: var(--tint);
 }
 
 /* =======================

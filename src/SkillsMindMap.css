@@ -99,6 +99,15 @@
     opacity: 0.9;
 }
 
+/* Dark mode: sit brand logos on a light chip so dark logos (SQL, C, Next.js…) stay visible */
+:root[data-theme='dark'] .skill-item-row img {
+    background: #F2EAE0;
+    border-radius: 6px;
+    padding: 3px;
+    box-sizing: border-box;
+    opacity: 1;
+}
+
 .skill-item-row svg {
     color: var(--body) !important;
     font-size: 1.3rem;
