@@ -2,6 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+:root[data-theme='dark'] body {
+  background-color: #17120F;
+  color: #D6C6BA;
+}
+
 body {
   margin: 0;
   font-family: 'DM Sans', system-ui, sans-serif;

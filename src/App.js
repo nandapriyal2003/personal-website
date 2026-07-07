@@ -8,7 +8,7 @@ import {
   faAws,
   faMicrosoft
 } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faFlask } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faFlask, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 import TypingEffect from './TypingEffect';
 import SkillsMindMap from './SkillsMindMap';
 import './App.css';
@@ -68,6 +68,35 @@ function ScrollProgress() {
   return <div className="scroll-progress" style={{ width: `${progress}%` }} />;
 }
 
+/* Light / dark mode toggle */
+function ThemeToggle() {
+  const [theme, setTheme] = useState(
+    () => document.documentElement.getAttribute('data-theme') || 'light'
+  );
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    try {
+      localStorage.setItem('theme', theme);
+    } catch (e) {
+      /* ignore private-mode storage errors */
+    }
+  }, [theme]);
+
+  const isDark = theme === 'dark';
+
+  return (
+    <button
+      className="theme-toggle"
+      onClick={() => setTheme(isDark ? 'light' : 'dark')}
+      aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+      title={isDark ? 'Light mode' : 'Dark mode'}
+    >
+      <FontAwesomeIcon icon={isDark ? faSun : faMoon} />
+    </button>
+  );
+}
+
 /* Small tech-tag chips */
 function TechTags({ tags }) {
   return (
@@ -112,7 +141,10 @@ function App() {
             </a>
           </li>
         </ul>
-        <a href="#contact" className="cta-button">Let’s Talk</a>
+        <div className="nav-actions">
+          <ThemeToggle />
+          <a href="#contact" className="cta-button">Let’s Talk</a>
+        </div>
       </nav>
 
       {/* HERO */}
@@ -289,30 +321,6 @@ function App() {
               <TechTags tags={['Python', 'GPT-4', 'Prompt Engineering', 'NLP', 'Data Analysis']} />
               <a href="https://doi.org/10.48550/arXiv.2408.12617" target="_blank" rel="noopener noreferrer">
                 View Publication (DOI) →
-              </a>
-            </div>
-          </Reveal>
-
-          <Reveal delay={80}>
-            <div className="project-card accent-mint">
-              <h3>Spotifynder</h3>
-              <p>Music-based social discovery platform — sign in with Spotify to build a profile from your music
-                taste and get matched with people who share it.</p>
-              <TechTags tags={['React', 'SQLite', 'Spotify API']} />
-              <a href={`${process.env.PUBLIC_URL}/spotifynder-demo.mp4`} target="_blank" rel="noopener noreferrer">
-                Watch Demo →
-              </a>
-            </div>
-          </Reveal>
-
-          <Reveal>
-            <div className="project-card accent-pink">
-              <h3>SwipeHire — Job Search App</h3>
-              <p>Full-stack web app that helps college students discover jobs and internships through an
-                intuitive swipe-based interface, automatically ranking opportunities by resume and skill matching.</p>
-              <TechTags tags={['React.js', 'Django', 'PostgreSQL', 'REST APIs']} />
-              <a href="https://drive.google.com/file/d/1YjAxYyWw4cCDezqE0MGVUJriipxFPqfq/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                Watch Demo →
               </a>
             </div>
           </Reveal>
