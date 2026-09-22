@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './SkillsMindMap.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faDatabase, faTools, faUserTie, faGlobe, faServer, faFileAlt, faBrain, faComments, faSearch, faRobot, faTerminal } from '@fortawesome/free-solid-svg-icons';
-import { faAws, faGithub, faMicrosoft, faGitAlt, faPython, faJava, faJsSquare, faReact, faNodeJs, faDocker } from '@fortawesome/free-brands-svg-icons';
+import { faCode, faDatabase, faTools, faUserTie, faGlobe, faServer, faFileAlt, faBrain, faComments, faSearch, faRobot, faTerminal, faUsers, faClipboardList, faListCheck, faChartLine, faMap, faArrowsRotate } from '@fortawesome/free-solid-svg-icons';
+import { faAws, faGithub, faMicrosoft, faGitAlt, faPython, faJava, faJsSquare, faReact, faNodeJs, faDocker, faFigma, faConfluence } from '@fortawesome/free-brands-svg-icons';
 
 /* Import Images */
 import pythonimg from './assets/python.png';
@@ -48,6 +48,7 @@ const skillCategories = [
         icon: faDatabase,
         skills: [
             { name: 'Power BI', img: powerbiimg },
+            { name: 'Looker', icon: faChartLine },
             { name: 'Databricks', img: databricksimg },
             { name: 'Snowflake', img: snowflakeimg },
             { name: 'PostgreSQL', img: postgresqlimg },
@@ -67,6 +68,8 @@ const skillCategories = [
             { name: 'Node.js', icon: faNodeJs },
             { name: 'Next.js', img: nextjsimg },
             { name: 'Git / GitHub', icon: faGithub },
+            { name: 'Figma', icon: faFigma },
+            { name: 'Confluence', icon: faConfluence },
             { name: 'REST APIs', icon: faGlobe },
             { name: 'Claude Code', icon: faRobot },
             { name: 'OpenAI Codex', icon: faTerminal },
@@ -77,6 +80,11 @@ const skillCategories = [
         title: 'Professional Skills',
         icon: faUserTie,
         skills: [
+            { name: 'User Research', icon: faUsers },
+            { name: 'Requirements Gathering', icon: faClipboardList },
+            { name: 'Feature Prioritization', icon: faListCheck },
+            { name: 'Roadmap Planning', icon: faMap },
+            { name: 'Agile / Scrum', icon: faArrowsRotate },
             { name: 'Data-driven Decisions', icon: faBrain },
             { name: 'Cross-functional Collab', icon: faUserTie },
             { name: 'Stakeholder Communication', icon: faComments },

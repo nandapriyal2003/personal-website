@@ -19,6 +19,7 @@ import hackherLogo from './assets/hackher_new_logo.png';
 import siemensLogo from './assets/siemens_logo.png';
 import dreamLogo from './assets/dreamlab_logo.png';
 import buildLogo from './assets/buildumass_logo.png';
+import cargurusLogo from './assets/cargurus_logo.svg';
 
 /* Reveal-on-scroll wrapper */
 function Reveal({ children, delay = 0 }) {
@@ -193,6 +194,21 @@ function App() {
         <div className="projects-container">
 
           <Reveal>
+            <div className="project-card accent-violet">
+              <div className="card-header-flex">
+                <img src={cargurusLogo} alt="CarGurus Logo" className="exp-logo" />
+                <h3>CarGurus (Ads Intelligence) · Product Manager Intern</h3>
+              </div>
+              <p className="card-date">Jul 2026 – Present</p>
+              <ul>
+                <li>Owned product discovery for an internal sales tool, mapping the end-to-end workflow, identifying automation opportunities, and defining requirements for a future-state experience.</li>
+                <li>Led feature prioritization for VINMax, a dealer-facing product generating over $1.2M in MRR across 800+ dealers; defined requirements for enhancements including Edit Mode and performance visualizations.</li>
+                <li>Used session activity, feature engagement, click-through rates, and dealer feedback to evaluate product performance, identify unmet needs, and inform ongoing feature improvements.</li>
+              </ul>
+            </div>
+          </Reveal>
+
+          <Reveal delay={80}>
             <div className="project-card accent-sky">
               <div className="card-header-flex">
                 <img src={hackherLogo} alt="Hack(H)er413 Logo" className="exp-logo" />
@@ -260,9 +276,9 @@ function App() {
               </div>
               <p className="card-date">Feb 2023 – May 2025</p>
               <ul>
-                <li>Utilized the MERN stack to develop a client webpage, with a primary focus on the frontend using React.js.</li>
-                <li>Led meetings with internal team members, clients, and project leads.</li>
-                <li>Oversaw end-to-end website development, including design and optimization, ensuring a cohesive online presence.</li>
+                <li>Led development of a multilingual app used by 10K+ users, driving feature updates that increased engagement by 20%.</li>
+                <li>Collaborated with 7+ developers to ship data-informed features while balancing technical constraints.</li>
+                <li>Analyzed user behavior across English, Hindi, and Kannada versions to identify patterns, improving usability and adoption.</li>
               </ul>
             </div>
           </Reveal>
